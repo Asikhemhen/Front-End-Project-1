@@ -1,0 +1,32 @@
+/* HEADER UPPER */
+.header-top {
+  background: #19183a;
+  width: auto;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 79px;
+}
+
+.header-top-link {
+  font-family: "Archivo";
+  font-style: normal;
+  text-decoration: none;
+}
+
+.header-top-left .header-top-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: #d2daf0;
+}
+
+.header-top-right .header-top-link {
+  font-weight: 500;
+  font-size: 13px;
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.header-top-right .header-top-link-nigeria {
+  margin-left: 3px;
+}

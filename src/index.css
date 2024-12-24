@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .input-container {
+  background-color: brown;
+} */
+
+body {
+  font: "Achivo";
+}
+
+@media (max-width: 992px) {
+  .menu {
+    display: flex;
+  }
+
+  .login,
+  .sign-up,
+  .line,
+  .categories,
+  .hero-image {
+    display: none;
+  }
+}
+
+.btn-search-hero {
+  background-color: #030a70;
+  border-color: #030a70;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero-container {
+    max-width: 64rem;
+  }
+}
