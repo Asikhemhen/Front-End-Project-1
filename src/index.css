@@ -15,16 +15,28 @@ body {
     display: flex;
   }
 
+  .hero-section {
+    display: block;
+  }
+
+  .hero-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero-image {
+    min-width: 100%;
+  }
+
   .login,
   .sign-up,
   .line,
-  .categories,
-  .hero-image {
+  .categories {
     display: none;
   }
 }
 
-.btn-search-hero {
+.btn-landing {
   background-color: #030a70;
   border-color: #030a70;
 }

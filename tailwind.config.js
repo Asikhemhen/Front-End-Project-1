@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      scrollbarHide: {
+        "-ms-overflow-style": "none",
+        "scrollbar-width": "none",
+      },
+    },
   },
   plugins: [],
 };
