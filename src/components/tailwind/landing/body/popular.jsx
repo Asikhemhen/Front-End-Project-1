@@ -13,13 +13,13 @@ function Popular() {
           </p>
         </div>
         {/* <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-10"> */}
-        <div className="flex justify-between gap-4 flex-wrap max-md:justify-center">
+        <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-4">
           <Product />
           <Product />
           <Product />
-          <Product />
-          <Product />
-          <Product />
+          <div className="lg:flex md:hidden">
+            <Product />
+          </div>
         </div>
         <p className="lg:hidden text-lg font-medium self-center">
           {"Explore popular products"}
