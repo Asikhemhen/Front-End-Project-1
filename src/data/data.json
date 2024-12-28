@@ -1,0 +1,240 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Foodstuff",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    },
+    {
+      "id": 2,
+      "name": "Bags & Purses",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    },
+    {
+      "id": 3,
+      "name": "Jewellries",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    },
+    {
+      "id": 4,
+      "name": "Arts & Collectibles",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    },
+    {
+      "id": 5,
+      "name": "Clothings",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    },
+    {
+      "id": 6,
+      "name": "Home & Living",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    },
+    {
+      "id": 7,
+      "name": "Fabrics",
+      "quantity": 3000,
+      "image": "/hero.svg"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Pattern Africa Exquisite Collage Art on Stretched Canvas",
+      "rating": 4.9,
+      "reviews": 430,
+      "sales": 3000,
+      "price": 280.95,
+      "discount": 30,
+      "shop": "Tola Artz & Designs",
+      "image": "/product.svg"
+    },
+    {
+      "id": 2,
+      "name": "Pattern Africa Exquisite Collage Art on Stretched Canvas",
+      "rating": 4.9,
+      "reviews": 430,
+      "sales": 3000,
+      "price": 280.95,
+      "discount": 30,
+      "shop": "Tola Artz & Designs",
+      "image": "/product.svg"
+    },
+    {
+      "id": 3,
+      "name": "Pattern Africa Exquisite Collage Art on Stretched Canvas",
+      "rating": 4.9,
+      "reviews": 430,
+      "sales": 3000,
+      "price": 280.95,
+      "discount": 30,
+      "shop": "Tola Artz & Designs",
+      "image": "/product.svg"
+    },
+    {
+      "id": 3,
+      "name": "Pattern Africa Exquisite Collage Art on Stretched Canvas",
+      "rating": 4.9,
+      "reviews": 430,
+      "sales": 3000,
+      "price": 280.95,
+      "discount": 30,
+      "shop": "Tola Artz & Designs",
+      "image": "/product.svg"
+    }
+  ],
+
+  "shops": [
+    {
+      "id": 1,
+      "name": "Creative Beads Store",
+      "caption": "The best African fashion beads",
+      "reviews": 96.3,
+      "followers": 600,
+      "sales": 5000,
+      "image": "/shopHero.svg",
+      "logo": "/shopLogo.svg",
+      "categories": [
+        {
+          "id": 1,
+          "category": "Fashion"
+        },
+        {
+          "id": 2,
+          "category": "Accessories"
+        },
+        {
+          "id": 3,
+          "category": "Decor"
+        },
+        {
+          "id": 4,
+          "category": "Jewelry"
+        },
+        {
+          "id": 5,
+          "category": "Beauty"
+        },
+        {
+          "id": 6,
+          "category": "Collectibles"
+        },
+        {
+          "id": 7,
+          "category": "Foods"
+        },
+        {
+          "id": 8,
+          "category": "Arts"
+        },
+        {
+          "id": 9,
+          "category": "Clothings"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Creative Beads Store",
+      "caption": "The best African fashion beads",
+      "reviews": 96.3,
+      "followers": 600,
+      "sales": 5000,
+      "image": "/shopHero.svg",
+      "logo": "/shopLogo.svg",
+      "categories": [
+        {
+          "id": 1,
+          "category": "Fashion"
+        },
+        {
+          "id": 2,
+          "category": "Accessories"
+        },
+        {
+          "id": 3,
+          "category": "Decor"
+        },
+        {
+          "id": 4,
+          "category": "Jewelry"
+        },
+        {
+          "id": 5,
+          "category": "Beauty"
+        },
+        {
+          "id": 6,
+          "category": "Collectibles"
+        },
+        {
+          "id": 7,
+          "category": "Foods"
+        },
+        {
+          "id": 8,
+          "category": "Arts"
+        },
+        {
+          "id": 9,
+          "category": "Clothings"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Creative Beads Store",
+      "caption": "The best African fashion beads",
+      "reviews": 96.3,
+      "followers": 600,
+      "sales": 5000,
+      "image": "/shopHero.svg",
+      "logo": "/shopLogo.svg",
+      "categories": [
+        {
+          "id": 1,
+          "category": "Fashion"
+        },
+        {
+          "id": 2,
+          "category": "Accessories"
+        },
+        {
+          "id": 3,
+          "category": "Decor"
+        },
+        {
+          "id": 4,
+          "category": "Jewelry"
+        },
+        {
+          "id": 5,
+          "category": "Beauty"
+        },
+        {
+          "id": 6,
+          "category": "Collectibles"
+        },
+        {
+          "id": 7,
+          "category": "Foods"
+        },
+        {
+          "id": 8,
+          "category": "Arts"
+        },
+        {
+          "id": 9,
+          "category": "Clothings"
+        }
+      ]
+    }
+  ]
+}

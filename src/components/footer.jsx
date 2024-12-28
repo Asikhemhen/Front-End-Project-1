@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import facebook from "../../../common/icons/facebook.svg";
-import instagram from "../../../common/icons/instagram.svg";
-import line from "../../../common/icons/hl.svg";
-import ellipse from "../../../common/icons/ellipse.svg";
-import message from "../../../common/icons/message.svg";
+import facebook from "../assets/images/facebook.svg";
+import instagram from "../assets/images/instagram.svg";
+import line from "../assets/images/hl.svg";
+import ellipse from "../assets/images/ellipse.svg";
+import message from "../assets/images/message.svg";
 
 function Footer() {
   return (
@@ -21,7 +21,7 @@ function Footer() {
               type="text"
               placeholder="Enter email address..."
             />
-            <button className="min-w-28 border rounded-lg text-white text-sm font-medium m-2 ml-0 right-0 btn-landing">
+            <button className="min-w-28 border rounded-lg text-white text-sm font-medium m-2 ml-0 right-0 bg-indigo-900">
               Join Now
             </button>
           </div>
