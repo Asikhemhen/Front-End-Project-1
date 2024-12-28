@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Front-End-Project-1/static/css/main.a44453f6.css",
+    "main.js": "/Front-End-Project-1/static/js/main.42656668.js",
+    "static/js/453.a4fe6e7c.chunk.js": "/Front-End-Project-1/static/js/453.a4fe6e7c.chunk.js",
+    "static/media/hero.svg": "/Front-End-Project-1/static/media/hero.63b46b8f657ff0b6b83de2347e7b24d3.svg",
+    "static/media/product.svg": "/Front-End-Project-1/static/media/product.954364490fdb74b7038c.svg",
+    "static/media/logo.svg": "/Front-End-Project-1/static/media/logo.36d22921ced36f8c8dce0c6129ab5d11.svg",
+    "static/media/frame.svg": "/Front-End-Project-1/static/media/frame.bc3570d094beb929947a76b5401eb529.svg",
+    "static/media/shopHero.svg": "/Front-End-Project-1/static/media/shopHero.1d3c960005b6412880ec.svg",
+    "static/media/shopLogo.svg": "/Front-End-Project-1/static/media/shopLogo.9d45ffddbb8b2878382a.svg",
+    "static/media/instagram.svg": "/Front-End-Project-1/static/media/instagram.13dec7cc3f9d3395f8c9b74cf50b2987.svg",
+    "static/media/globe.svg": "/Front-End-Project-1/static/media/globe.32e3f1b10dc0e7b3a85f11b4577148c1.svg",
+    "static/media/verify.svg": "/Front-End-Project-1/static/media/verify.2e722d6a074057ab50ac433ee159bf53.svg",
+    "static/media/dollar.svg": "/Front-End-Project-1/static/media/dollar.584c3b5daefdedb77800ce2fa886bbce.svg",
+    "static/media/shop-icon.svg": "/Front-End-Project-1/static/media/shop-icon.9af46d5bf3b472d6e32d072f6b479cf1.svg",
+    "static/media/shoppingCart.svg": "/Front-End-Project-1/static/media/shoppingCart.a2feff1720505d1ef99e7c3185d248af.svg",
+    "static/media/message.svg": "/Front-End-Project-1/static/media/message.b3ea88fd3be83a732ce8eea93d6f11d7.svg",
+    "static/media/whygiri.svg": "/Front-End-Project-1/static/media/whygiri.b53d13904a6928adf05467f5c02b2f0b.svg",
+    "index.html": "/Front-End-Project-1/index.html",
+    "static/media/star.svg": "/Front-End-Project-1/static/media/star.da8a8557bfec05d6b1f1576fdf74a623.svg",
+    "static/media/facebook.svg": "/Front-End-Project-1/static/media/facebook.bc2780883e3c7eaeaf46fbfa0463c7ef.svg",
+    "static/media/heart 2.svg": "/Front-End-Project-1/static/media/heart 2.8346c971566b0e62baa9c6ab9414b759.svg",
+    "static/media/heart-blue.svg": "/Front-End-Project-1/static/media/heart-blue.f88091dc464b43eb5679.svg",
+    "static/media/heart.svg": "/Front-End-Project-1/static/media/heart.f88091dc464b43eb56795f89e1f64883.svg",
+    "static/media/search.svg": "/Front-End-Project-1/static/media/search.573f9111b3366c203e24cf6a43ec7144.svg",
+    "static/media/menu.svg": "/Front-End-Project-1/static/media/menu.268543576a140af76a9c312753800161.svg",
+    "static/media/arrowDown.svg": "/Front-End-Project-1/static/media/arrowDown.d7da15a3580de5fa0638f6621b2c8d1e.svg",
+    "static/media/arrowDownWhite.svg": "/Front-End-Project-1/static/media/arrowDownWhite.590ccde01c4fcd346240b0b5f058b18b.svg",
+    "static/media/arrow-right.svg": "/Front-End-Project-1/static/media/arrow-right.8a034a19ded0ec3b79a6698f0ebddb76.svg",
+    "static/media/hl.svg": "/Front-End-Project-1/static/media/hl.9e0149f3312916c8eae22d77efbd258e.svg",
+    "static/media/line.svg": "/Front-End-Project-1/static/media/line.ad4ebc4f9791366d2519b84e44d6e656.svg",
+    "static/media/ellipse.svg": "/Front-End-Project-1/static/media/ellipse.7852938039544067efeb08ca574554bc.svg",
+    "main.a44453f6.css.map": "/Front-End-Project-1/static/css/main.a44453f6.css.map",
+    "main.42656668.js.map": "/Front-End-Project-1/static/js/main.42656668.js.map",
+    "453.a4fe6e7c.chunk.js.map": "/Front-End-Project-1/static/js/453.a4fe6e7c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a44453f6.css",
+    "static/js/main.42656668.js"
+  ]
+}
