@@ -14,7 +14,7 @@ function BottomHeader() {
         <div className="flex justify-between items-center space-x-20">
           <div className="flex">
             <img
-              className="text-3xl menu hidden focus:outline-none text-stone-500 mr-4"
+              className="text-3xl menu hidden max-lg:flex focus:outline-none text-stone-500 mr-4"
               src={menu}
               alt="menu"
             />
@@ -35,18 +35,18 @@ function BottomHeader() {
               />
               <img src={search} className="h-6 self-center absolute left-48" />
             </div>
-            <button className="categories min-w-32 text-indigo-950 text-sm font-medium">
+            <button className="max-lg:hidden min-w-32 text-indigo-950 text-sm font-medium">
               Categories{" "}
               <img src={arrowDown} className="inline" alt="arrow-down" />
             </button>
-            <img src={line} className="line inline" alt="line" />
+            <img src={line} className="max-lg:hidden inline" alt="line" />
             <NavLink
-              className="login self-center text-indigo-950 hover:opercity-90 mx-5"
+              className="max-lg:hidden self-center text-indigo-950 hover:opercity-90 mx-5"
               to="/Login"
             >
               Login
             </NavLink>
-            <button className="sign-up min-w-24 border border-indigo-950 rounded-md text-indigo-950 text-md font-medium">
+            <button className="max-lg:hidden min-w-24 border border-indigo-950 rounded-md text-indigo-950 text-md font-medium">
               Sign Up
             </button>
             <img src={heart} className="mx-5" alt="heart" />

@@ -794,10 +794,6 @@ video {
   width: 2.25rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-auto {
   width: auto;
 }
@@ -954,6 +950,10 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.place-self-center {
+  place-self: center;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1018,6 +1018,11 @@ video {
   border-right-width: 1px;
 }
 
+.border-indigo-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 46 129 / var(--tw-border-opacity));
+}
+
 .border-indigo-950 {
   --tw-border-opacity: 1;
   border-color: rgb(30 27 75 / var(--tw-border-opacity));
@@ -1046,6 +1051,11 @@ video {
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-950 {
@@ -1136,11 +1146,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-10 {
@@ -1271,50 +1276,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* .input-container {
-  background-color: brown;
-} */
-
 body {
-  font: "Achivo";
+  font-family: "Achivo";
 }
 
-@media (max-width: 992px) {
-  .menu {
-    display: flex;
-  }
-
-  .hero-section {
-    display: block;
-  }
-
-  .hero-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .hero-image {
-    min-width: 100%;
-  }
-
-  .login,
-  .sign-up,
-  .line,
-  .categories {
-    display: none;
-  }
-}
-
-.btn-landing {
-  background-color: #030a70;
-  border-color: #030a70;
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .hero-container {
-    max-width: 64rem;
-  }
-}
+/* Helps to Hide the Horizontal scroll Bar across different Browsers */
 
 .scrollbar-hide {
   -ms-overflow-style: none;
@@ -1342,8 +1308,24 @@ body {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:block {
+    display: block;
+  }
+
+  .max-lg\:flex {
+    display: flex;
+  }
+
   .max-lg\:hidden {
     display: none;
+  }
+
+  .max-lg\:w-full {
+    width: 100%;
+  }
+
+  .max-lg\:max-w-5xl {
+    max-width: 64rem;
   }
 
   .max-lg\:grid-cols-2 {
@@ -1362,10 +1344,6 @@ body {
     align-content: center;
   }
 
-  .max-lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .max-lg\:bg-slate-100 {
     --tw-bg-opacity: 1;
     background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -1374,6 +1352,11 @@ body {
   .max-lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .max-lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 

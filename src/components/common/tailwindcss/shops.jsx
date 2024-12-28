@@ -6,7 +6,7 @@ import verify from "../icons/verify.svg";
 
 function Shops() {
   return (
-    <div className="flex flex-col borde bg-white max-lg:bg-slate-100 w-96 rounded-lg overflow-hidden relative">
+    <div className="flex flex-col borde bg-white max-lg:bg-slate-100 max-w-96 rounded-lg overflow-hidden relative">
       <div className="h-24 w-auto rounded-lg m-1 overflow-hidden">
         <img className="w-full" src={shops} alt="product" />
       </div>
@@ -55,7 +55,7 @@ function Shops() {
           <button className="border-2 text-sm font-medium border-indigo-950 rounded-lg h-11 w-44">
             Follow store
           </button>
-          <button className="btn-landing text-white text-sm font-medium rounded-lg h-11 w-44">
+          <button className="bg-indigo-900 border border-indigo-900 text-white text-sm font-medium rounded-lg h-11 w-44">
             Visit store
           </button>
         </div>

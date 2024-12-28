@@ -2,51 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .input-container {
-  background-color: brown;
-} */
-
 body {
-  font: "Achivo";
+  font-family: "Achivo";
 }
 
-@media (max-width: 992px) {
-  .menu {
-    display: flex;
-  }
-
-  .hero-section {
-    display: block;
-  }
-
-  .hero-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .hero-image {
-    min-width: 100%;
-  }
-
-  .login,
-  .sign-up,
-  .line,
-  .categories {
-    display: none;
-  }
-}
-
-.btn-landing {
-  background-color: #030a70;
-  border-color: #030a70;
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .hero-container {
-    max-width: 64rem;
-  }
-}
-
+/* Helps to Hide the Horizontal scroll Bar across different Browsers */
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

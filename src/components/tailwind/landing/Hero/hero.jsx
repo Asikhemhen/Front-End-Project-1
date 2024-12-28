@@ -5,8 +5,8 @@ import frame from "../../../common/icons/frame.svg";
 
 function Hero() {
   return (
-    <section className="bg-indigo-100 flex hero-section">
-      <div className="flex basis-full max-w-2xl mx-auto py-3 px-5 hero-container">
+    <section className="bg-indigo-100 flex max-lg:block">
+      <div className="flex basis-full max-w-2xl mx-auto py-3 px-5 max-lg:py-12 max-lg:max-w-5xl">
         <div className="bg-indigo-100 flex flex-col justify-center basis-full space-y-5">
           <div className="flex justify-end border border-white rounded-3xl h-10 max-w-80 relative">
             <img src={frame} className="h-6 self-center absolute left-2" />
@@ -18,7 +18,7 @@ function Hero() {
             Discover Your Next Favourite Product From Africa!
           </h1>
           <div className="flex border rounded-xl bg-white h-16 border-white relative">
-            <button className="min-w-40 border rounded-l-xl text-white text-sm font-medium m-1 mr-0 btn-landing">
+            <button className="min-w-40 border rounded-l-xl bg-indigo-900 text-white text-sm font-medium m-1 mr-0">
               All Categories{" "}
               <img src={arrowDownWhite} className="inline" alt="arrow-down" />
             </button>
@@ -52,7 +52,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <img className="hero-image" src={hero} alt="hero image" />
+      <img className="max-lg:w-full" src={hero} alt="hero image" />
     </section>
   );
 }

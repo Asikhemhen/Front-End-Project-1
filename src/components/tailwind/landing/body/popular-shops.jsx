@@ -11,10 +11,12 @@ function PopularShops() {
           <img src={explore} alt="Explore More" className="inline" />
         </p>
       </div>
-      <div className="flex justify-between items-center max-lg:flex-col max-lg:content-center max-lg:gap-8 py-6">
+      <div className="grid place-self-center grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
         <Shops />
         <Shops />
-        <Shops />
+        <div className="lg:flex sm:hidden">
+          <Shops />
+        </div>
       </div>
     </section>
   );
