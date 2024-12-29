@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ellipse from "../assets/images/ellipse.svg";
 import globe from "../assets/images/globe.svg";
 import dollar from "../assets/images/dollar.svg";
@@ -10,8 +10,24 @@ import shoppingCart from "../assets/images/shoppingCart.svg";
 import arrowDown from "../assets/images/arrowDown.svg";
 import search from "../assets/images/search.svg";
 import menu from "../assets/images/menu.svg";
+import Categories from "./categoryDropDown";
 
 function NavBar() {
+  let [catDropDown, setcatDropDown] = useState("hidden");
+  let [cat, setCat] = useState("");
+  let [catBtnState, setCatBtnState] = useState("All Categories");
+
+  const handleClickCategoryBtn = () => {
+    catDropDown = catDropDown === "hidden" ? "flex" : "hidden";
+    setcatDropDown(catDropDown);
+  };
+
+  const handleClickCategoryItem = (event) => {
+    setCat(event);
+    setCatBtnState(event);
+    setcatDropDown("hidden");
+  };
+
   return (
     <header>
       <section class="bg-indigo-950 text-white sticky top-0 z-10">
@@ -52,8 +68,11 @@ function NavBar() {
             </div>
             <div className="header-container flex justify-end basis-full">
               <div className="hidden sm:flex search-container basis-full border rounded-lg bg-stone-50 h-12  border-stone-300 relative">
-                <button className="min-w-40 border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium">
-                  All Categories{" "}
+                <button
+                  className="min-w-40 border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
+                  onClick={handleClickCategoryBtn}
+                >
+                  {catBtnState}{" "}
                   <img src={arrowDown} className="inline" alt="arrow-down" />
                 </button>
                 <input
@@ -64,6 +83,11 @@ function NavBar() {
                 <img
                   src={search}
                   className="h-6 self-center absolute left-48"
+                />
+                <Categories
+                  display={catDropDown}
+                  handleClickCategoryItem={handleClickCategoryItem}
+                  top="top-12"
                 />
               </div>
               <button className="max-lg:hidden min-w-32 text-indigo-950 text-sm font-medium">
@@ -85,8 +109,11 @@ function NavBar() {
             </div>
           </div>
           <div className="flex sm:hidden basis-full mt-3 border rounded-lg bg-stone-50 h-12 border-stone-300 relative">
-            <button className="min-w-40 border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium">
-              All Categories{" "}
+            <button
+              className="min-w-40 border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
+              onClick={handleClickCategoryBtn}
+            >
+              {catBtnState}{" "}
               <img src={arrowDown} className="inline" alt="arrow-down" />
             </button>
             <input
@@ -95,6 +122,11 @@ function NavBar() {
               placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
             />
             <img src={search} className="h-6 self-center absolute left-48" />
+            <Categories
+              display={catDropDown}
+              handleClickCategoryItem={handleClickCategoryItem}
+              top="top-12"
+            />
           </div>
         </section>
       </section>

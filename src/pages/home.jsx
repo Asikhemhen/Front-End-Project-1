@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import { React, useRef, useState } from "react";
 import NavBar from "../components/navBar";
 import hero from "../assets/images/hero.svg";
 import search from "../assets/images/search.svg";
@@ -11,9 +11,23 @@ import { NavLink } from "react-router-dom";
 import Shops from "../components/shops";
 import explore from "../assets/images/whygiri.svg";
 import Footer from "../components/footer";
+import Categories from "../components/categoryDropDown";
 
 const Home = () => {
   let scrollHorizontalRef = useRef(null);
+
+  let [catDropDown, setcatDropDown] = useState("hidden");
+  let [catBtnState, setCatBtnState] = useState("All Categories");
+
+  const handleClickCategoryBtn = () => {
+    catDropDown = catDropDown === "hidden" ? "flex" : "hidden";
+    setcatDropDown(catDropDown);
+  };
+
+  const handleClickCategoryItem = (event) => {
+    setCatBtnState(event);
+    setcatDropDown("hidden");
+  };
 
   const handleWheel = (event) => {
     event.preventDefault();
@@ -35,8 +49,11 @@ const Home = () => {
               Discover Your Next Favourite Product From Africa!
             </h1>
             <div className="flex border rounded-xl bg-white h-16 border-white relative">
-              <button className="min-w-40 border rounded-l-xl bg-indigo-900 text-white text-sm font-medium m-1 mr-0">
-                All Categories{" "}
+              <button
+                className="min-w-40 border rounded-l-xl bg-indigo-900 text-white text-sm font-medium m-1 mr-0"
+                onClick={handleClickCategoryBtn}
+              >
+                {catBtnState}{" "}
                 <img src={arrowDownWhite} className="inline" alt="arrow-down" />
               </button>
               <input
@@ -45,6 +62,11 @@ const Home = () => {
                 placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
               />
               <img src={search} className="h-6 self-center absolute left-48" />
+              <Categories
+                display={catDropDown}
+                handleClickCategoryItem={handleClickCategoryItem}
+                top="top-16"
+              />
             </div>
             <div className="space-y-2">
               <h6>Explore these categories:</h6>
