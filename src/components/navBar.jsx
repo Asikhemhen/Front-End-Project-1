@@ -14,7 +14,6 @@ import Categories from "./categoryDropDown";
 
 function NavBar() {
   let [catDropDown, setcatDropDown] = useState("hidden");
-  let [cat, setCat] = useState("");
   let [catBtnState, setCatBtnState] = useState("All Categories");
 
   const handleClickCategoryBtn = () => {
@@ -23,7 +22,6 @@ function NavBar() {
   };
 
   const handleClickCategoryItem = (event) => {
-    setCat(event);
     setCatBtnState(event);
     setcatDropDown("hidden");
   };
