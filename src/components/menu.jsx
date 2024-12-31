@@ -40,7 +40,6 @@ const MenuBar = (props) => {
         ></img>{" "}
         Sign Up
       </NavLink>
-      <p>hjasgdjakbNxhk</p>
     </div>
   );
 };
