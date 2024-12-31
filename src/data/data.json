@@ -4,43 +4,43 @@
       "id": 1,
       "name": "Foodstuff",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/foodstuff.svg"
     },
     {
       "id": 2,
       "name": "Bags & Purses",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/bags&purses.svg"
     },
     {
       "id": 3,
       "name": "Jewellries",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/jewelries.svg"
     },
     {
       "id": 4,
       "name": "Arts & Collectibles",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/arts&collectibles.svg"
     },
     {
       "id": 5,
       "name": "Clothings",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/clothings.svg"
     },
     {
       "id": 6,
       "name": "Home & Living",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/home&living.svg"
     },
     {
       "id": 7,
-      "name": "Fabrics",
+      "name": "clothings",
       "quantity": 3000,
-      "image": "/hero.svg"
+      "image": "/clothings.svg"
     }
   ],
 
@@ -79,7 +79,7 @@
       "image": "/product.svg"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Pattern Africa Exquisite Collage Art on Stretched Canvas",
       "rating": 4.9,
       "reviews": 430,
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Creative Beads Store",
       "caption": "The best African fashion beads",
       "reviews": 96.3,
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Creative Beads Store",
       "caption": "The best African fashion beads",
       "reviews": 96.3,

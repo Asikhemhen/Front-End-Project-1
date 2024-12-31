@@ -1,64 +1,94 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ellipse from "../assets/images/ellipse.svg";
 import globe from "../assets/images/globe.svg";
 import dollar from "../assets/images/dollar.svg";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import heart from "../assets/images/heart.svg";
-import line from "../assets/images/line.svg";
 import shoppingCart from "../assets/images/shoppingCart.svg";
 import arrowDown from "../assets/images/arrowDown.svg";
 import search from "../assets/images/search.svg";
 import menu from "../assets/images/menu.svg";
 import Categories from "./categoryDropDown";
+import MenuBar from "./menu";
 
-function NavBar() {
-  let [catDropDown, setcatDropDown] = useState("hidden");
-  let [catBtnState, setCatBtnState] = useState("All Categories");
+function NavBar(props) {
+  // State for large screen dropdown
+  const [largeScreenDropdown, setLargeScreenDropdown] = useState(false);
+  const [largeScreenSelected, setLargeScreenSelected] =
+    useState("All Categories");
 
-  const handleClickCategoryBtn = () => {
-    catDropDown = catDropDown === "hidden" ? "flex" : "hidden";
-    setcatDropDown(catDropDown);
+  // State for small screen dropdown
+  const [smallScreenDropdown, setSmallScreenDropdown] = useState(false);
+  const [smallScreenSelected, setSmallScreenSelected] =
+    useState("All Categories");
+
+  // Refs for dropdowns
+  const largeScreenRef = useRef(null);
+  const smallScreenRef = useRef(null);
+
+  // Handle outside click for large screen dropdown
+  useEffect(() => {
+    const handleOutsideClickLarge = (event) => {
+      if (
+        largeScreenRef.current &&
+        !largeScreenRef.current.contains(event.target)
+      ) {
+        setLargeScreenDropdown(false);
+      }
+    };
+    document.addEventListener("click", handleOutsideClickLarge);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClickLarge);
+    };
+  }, []);
+
+  // Handle outside click for small screen dropdown
+  useEffect(() => {
+    const handleOutsideClickSmall = (event) => {
+      if (
+        smallScreenRef.current &&
+        !smallScreenRef.current.contains(event.target)
+      ) {
+        setSmallScreenDropdown(false);
+      }
+    };
+    document.addEventListener("click", handleOutsideClickSmall);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClickSmall);
+    };
+  }, []);
+
+  // Toggle dropdowns
+  const toggleLargeScreenDropdown = () =>
+    setLargeScreenDropdown((prev) => !prev);
+  const toggleSmallScreenDropdown = () =>
+    setSmallScreenDropdown((prev) => !prev);
+
+  // Handle dropdown item click
+  const handleLargeScreenItemClick = (category) => {
+    setLargeScreenSelected(category);
+    setLargeScreenDropdown(false);
   };
 
-  const handleClickCategoryItem = (event) => {
-    setCatBtnState(event);
-    setcatDropDown("hidden");
+  const handleSmallScreenItemClick = (category) => {
+    setSmallScreenSelected(category);
+    setSmallScreenDropdown(false);
   };
 
   return (
     <header>
-      <section class="bg-indigo-950 text-white sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto py-3 px-5 flex items-center justify-end sm:justify-between">
-          <NavLink className="hidden sm:flex text-sm" to="/open-a-store">
-            Open a Giri store
-          </NavLink>
-          <div>
-            <nav class="space-x-5 text-sm flex" aria-label="main">
-              <NavLink className="hover:opercity-90 flex" to="/nigeria">
-                <img src={globe} className="pr-1" alt="globe" />
-                Nigeria
-              </NavLink>
-              <img src={ellipse} alt="ellipse" />
-              <NavLink className="hover:opercity-90 flex" to="/nigeria">
-                <img src={dollar} className="pr-1" alt="globe" /> (USD)
-              </NavLink>
-              <img src={ellipse} alt="ellipse" />
-              <NavLink className="hover:opercity-90 flex" to="/eng-uk">
-                ENG(UK)
-              </NavLink>
-            </nav>
-          </div>
-        </div>
-      </section>
       <section class="bg-white text-white">
         <section class="max-w-7xl mx-auto py-3 px-5">
           <div className="flex justify-between items-center space-x-20">
-            <div className="flex">
+            <div className="flex " ref={props.menuRef}>
               <img
-                className="text-3xl menu hidden max-lg:flex focus:outline-none text-stone-500 mr-4"
+                className="text-3xl menu hidden max-lg:flex focus:outline-none text-stone-500 mr-4 hover:cursor-pointer hover:opacity-60"
                 src={menu}
                 alt="menu"
+                onClick={props.toggleMenu}
               />
               <NavLink to="/#">
                 <img className="min-h-16 min-w-16" src={logo} alt="logo" />
@@ -66,15 +96,22 @@ function NavBar() {
             </div>
             <div className="header-container flex justify-end basis-full">
               <div className="hidden sm:flex search-container basis-full border rounded-lg bg-stone-50 h-12  border-stone-300 relative">
-                <button
-                  className="min-w-40 border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
-                  onClick={handleClickCategoryBtn}
-                >
-                  {catBtnState}{" "}
-                  <img src={arrowDown} className="inline" alt="arrow-down" />
-                </button>
+                <div ref={largeScreenRef}>
+                  <button
+                    className="min-w-40 h-full border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
+                    onClick={toggleLargeScreenDropdown}
+                  >
+                    {largeScreenSelected}{" "}
+                    <img src={arrowDown} className="inline" alt="arrow-down" />
+                  </button>
+                  <Categories
+                    display={largeScreenDropdown ? "flex" : "hidden"}
+                    handleClickCategoryItem={handleLargeScreenItemClick}
+                    top="top-12"
+                  />
+                </div>
                 <input
-                  className="w-full bg-transparent text-sm text-stone-900 pl-16"
+                  className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8"
                   type="text"
                   placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
                 />
@@ -82,17 +119,7 @@ function NavBar() {
                   src={search}
                   className="h-6 self-center absolute left-48"
                 />
-                <Categories
-                  display={catDropDown}
-                  handleClickCategoryItem={handleClickCategoryItem}
-                  top="top-12"
-                />
               </div>
-              <button className="max-lg:hidden min-w-32 text-indigo-950 text-sm font-medium">
-                Categories{" "}
-                <img src={arrowDown} className="inline" alt="arrow-down" />
-              </button>
-              <img src={line} className="max-lg:hidden inline" alt="line" />
               <NavLink
                 className="max-lg:hidden self-center text-indigo-950 hover:opercity-90 mx-5"
                 to="/Login"
@@ -107,24 +134,26 @@ function NavBar() {
             </div>
           </div>
           <div className="flex sm:hidden basis-full mt-3 border rounded-lg bg-stone-50 h-12 border-stone-300 relative">
-            <button
-              className="min-w-40 border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
-              onClick={handleClickCategoryBtn}
-            >
-              {catBtnState}{" "}
-              <img src={arrowDown} className="inline" alt="arrow-down" />
-            </button>
+            <div ref={smallScreenRef}>
+              <button
+                className="min-w-40 h-full border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
+                onClick={toggleSmallScreenDropdown}
+              >
+                {smallScreenSelected}{" "}
+                <img src={arrowDown} className="inline" alt="arrow-down" />
+              </button>
+              <Categories
+                display={smallScreenDropdown ? "flex" : "hidden"}
+                handleClickCategoryItem={handleSmallScreenItemClick}
+                top="top-12"
+              />
+            </div>
             <input
-              className="w-full bg-transparent text-sm text-stone-900 pl-16"
+              className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8"
               type="text"
               placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
             />
             <img src={search} className="h-6 self-center absolute left-48" />
-            <Categories
-              display={catDropDown}
-              handleClickCategoryItem={handleClickCategoryItem}
-              top="top-12"
-            />
           </div>
         </section>
       </section>

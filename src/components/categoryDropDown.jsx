@@ -1,13 +1,13 @@
 import data from "../data/data.json";
 
 const CategoriesDropDown = (props) => {
-  // const [allCat, setAllCat] = useState()
-
   const allCat = { id: data.categories.length + 1, name: "All Categories" };
   const categories = [allCat, ...data.categories];
+
   return (
     <div
-      className={`${props.display} text-indigo-950 bg-white border rounded-sm flex flex-col gap-2 absolute ${props.top} z-10`}
+      ref={props.dropDownRef}
+      className={`${props.display} text-indigo-950 bg-white border rounded-sm flex flex-col gap-2 absolute ${props.top} z-10 -left-0`}
     >
       {categories.map((category) => (
         <div

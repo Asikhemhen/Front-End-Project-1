@@ -1,4 +1,4 @@
-import { React, useRef, useState } from "react";
+import { React, useRef, useState, useEffect } from "react";
 import NavBar from "../components/navBar";
 import hero from "../assets/images/hero.svg";
 import search from "../assets/images/search.svg";
@@ -12,36 +12,89 @@ import Shops from "../components/shops";
 import explore from "../assets/images/whygiri.svg";
 import Footer from "../components/footer";
 import Categories from "../components/categoryDropDown";
+import MenuBar from "../components/menu";
+import TopBar from "../components/topBar";
 
 const Home = () => {
+  let [dropDown, setDropDown] = useState(false);
+  let [dropDownSelect, setDropDownSelect] = useState("All Categories");
+  let [menuState, setMenuState] = useState(false);
+
+  let dropDownRef = useRef(null);
   let scrollHorizontalRef = useRef(null);
+  let menuRef = useRef(null);
 
-  let [catDropDown, setcatDropDown] = useState("hidden");
-  let [catBtnState, setCatBtnState] = useState("All Categories");
-
-  const handleClickCategoryBtn = () => {
-    catDropDown = catDropDown === "hidden" ? "flex" : "hidden";
-    setcatDropDown(catDropDown);
+  //Toggle Munu
+  const toggleMenu = () => {
+    setMenuState((prevState) => !prevState);
   };
 
-  const handleClickCategoryItem = (event) => {
-    setCatBtnState(event);
-    setcatDropDown("hidden");
+  if (menuState) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  useEffect(() => {
+    const checkOutsideClicks = (event) => {
+      console.log("Current: ", menuRef.current);
+      console.log("Target: ", event.target);
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        console.log("Outside");
+        setMenuState(false);
+      }
+    };
+
+    document.addEventListener("click", checkOutsideClicks);
+
+    return () => {
+      document.removeEventListener("click", checkOutsideClicks);
+    };
+  }, []);
+
+  // Category Drop Down Button
+  const toggleDropDown = () => {
+    setDropDown((prevState) => !prevState);
   };
 
+  const handleSelectCategory = (event) => {
+    setDropDownSelect(event);
+    setDropDown(false);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+        setDropDown(false);
+      }
+    };
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  // Category Horizontal Scroll
   const handleWheel = (event) => {
     event.preventDefault();
     scrollHorizontalRef.current.scrollLeft += event.deltaY;
   };
   return (
     <div>
-      <NavBar />
+      <TopBar />
+      <MenuBar
+        display={menuState ? "flex" : "hidden"}
+        menuRef={menuRef}
+        toggleMenu={toggleMenu}
+      />
+      <NavBar toggleMenu={toggleMenu} menuRef={menuRef} />
       <section className="bg-indigo-100 flex max-lg:block">
         <div className="flex basis-full max-w-2xl mx-auto py-3 px-5 max-lg:py-12 max-lg:max-w-5xl">
           <div className="bg-indigo-100 flex flex-col justify-center basis-full space-y-5">
             <div className="flex justify-end border border-white rounded-3xl h-10 max-w-80 relative">
               <img src={frame} className="h-6 self-center absolute left-2" />
-              <h6 className="text-sm text-right p-2 pr-3">
+              <h6 className="text-sm text-center p-2 pr-10">
                 Trusted by over 2M+ buyers!
               </h6>
             </div>
@@ -49,24 +102,30 @@ const Home = () => {
               Discover Your Next Favourite Product From Africa!
             </h1>
             <div className="flex border rounded-xl bg-white h-16 border-white relative">
-              <button
-                className="min-w-40 border rounded-l-xl bg-indigo-900 text-white text-sm font-medium m-1 mr-0"
-                onClick={handleClickCategoryBtn}
-              >
-                {catBtnState}{" "}
-                <img src={arrowDownWhite} className="inline" alt="arrow-down" />
-              </button>
+              <div className="m-1" ref={dropDownRef}>
+                <button
+                  className="min-w-40 h-full border rounded-l-xl bg-indigo-900 text-white text-sm font-medium mr-0"
+                  onClick={toggleDropDown}
+                >
+                  {dropDownSelect}{" "}
+                  <img
+                    src={arrowDownWhite}
+                    className="inline"
+                    alt="arrow-down"
+                  />
+                </button>
+                <Categories
+                  display={dropDown ? "flex" : "hidden"}
+                  handleClickCategoryItem={handleSelectCategory}
+                  top="top-16"
+                />
+              </div>
               <input
                 className="w-full rounded-r-xl bg-stone-50 text-sm text-stone-900 m-1 ml-0 pl-16 pr-8"
                 type="text"
                 placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
               />
               <img src={search} className="h-6 self-center absolute left-48" />
-              <Categories
-                display={catDropDown}
-                handleClickCategoryItem={handleClickCategoryItem}
-                top="top-16"
-              />
             </div>
             <div className="space-y-2">
               <h6>Explore these categories:</h6>
