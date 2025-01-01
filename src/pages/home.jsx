@@ -1,56 +1,23 @@
 import { React, useRef, useState, useEffect } from "react";
-import NavBar from "../components/navBar";
 import hero from "../assets/images/hero.svg";
 import search from "../assets/images/search.svg";
 import arrowDownWhite from "../assets/images/arrowDownWhite.svg";
 import frame from "../assets/images/frame.svg";
-import Product from "../components/products";
-import more from "../assets/images/arrow-right.svg";
 import data from "../data/data.json";
 import { NavLink } from "react-router-dom";
-import Shops from "../components/shops";
 import explore from "../assets/images/whygiri.svg";
-import Footer from "../components/footer";
 import Categories from "../components/categoryDropDown";
-import MenuBar from "../components/menu";
-import TopBar from "../components/topBar";
+import PopularShops from "../components/popularShops";
+import PopularProducts from "../components/popularProducts";
+import RecommendedProducts from "../components/recommendedProducts";
+import OutsideClicks from "../components/OutsideClicks";
 
 const Home = () => {
   let [dropDown, setDropDown] = useState(false);
   let [dropDownSelect, setDropDownSelect] = useState("All Categories");
-  let [menuState, setMenuState] = useState(false);
 
   let dropDownRef = useRef(null);
   let scrollHorizontalRef = useRef(null);
-  let menuRef = useRef(null);
-
-  //Toggle Munu
-  const toggleMenu = () => {
-    setMenuState((prevState) => !prevState);
-  };
-
-  if (menuState) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
-
-  useEffect(() => {
-    const checkOutsideClicks = (event) => {
-      console.log("Current: ", menuRef.current);
-      console.log("Target: ", event.target);
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        console.log("Outside");
-        setMenuState(false);
-      }
-    };
-
-    document.addEventListener("click", checkOutsideClicks);
-
-    return () => {
-      document.removeEventListener("click", checkOutsideClicks);
-    };
-  }, []);
 
   // Category Drop Down Button
   const toggleDropDown = () => {
@@ -62,18 +29,7 @@ const Home = () => {
     setDropDown(false);
   };
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
-        setDropDown(false);
-      }
-    };
-    document.addEventListener("click", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, []);
+  OutsideClicks(dropDownRef, () => setDropDown(false));
 
   // Category Horizontal Scroll
   const handleWheel = (event) => {
@@ -82,13 +38,6 @@ const Home = () => {
   };
   return (
     <div>
-      <TopBar />
-      <MenuBar
-        display={menuState ? "flex" : "hidden"}
-        menuRef={menuRef}
-        toggleMenu={toggleMenu}
-      />
-      <NavBar toggleMenu={toggleMenu} menuRef={menuRef} />
       <section className="bg-indigo-100 flex max-lg:block">
         <div className="flex basis-full max-w-2xl mx-auto py-3 px-5 max-lg:py-12 max-lg:max-w-5xl">
           <div className="bg-indigo-100 flex flex-col justify-center basis-full space-y-5">
@@ -188,89 +137,9 @@ const Home = () => {
           View all categories -12
         </button>
       </section>
-      <section className="bg-stone-100 py-16">
-        <div className="flex flex-col gap-8 max-w-7xl mx-auto py-3 px-5">
-          <div className="flex justify-between max-md:justify-center items-center">
-            <h2 className="text-2xl font-bold md:">Recommended Products</h2>
-            <p className="max-md:hidden text-lg font-medium">
-              {"Explore recommended products"}
-              <img src={more} alt="Explore More" className="inline" />
-            </p>
-          </div>
-          <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-4">
-            {data.products.map((product) => (
-              <Product
-                key={product.id}
-                name={product.name}
-                image={require(`../assets/images${product.image}`)}
-                rating={product.rating}
-                reviews={product.reviews}
-                price={product.price}
-                sales={product.sales}
-                shop={product.shop}
-                discount={product.discount}
-              />
-            ))}
-          </div>
-          <p className="md:hidden text-lg font-medium self-center">
-            {"Explore recommended products"}
-            <img src={more} alt="Explore More" className="inline" />
-          </p>
-        </div>
-      </section>
-      <section className="my-14">
-        <div className="flex flex-col gap-8 max-w-7xl mx-auto py-3 px-5">
-          <div className="flex justify-between max-md:justify-center items-center">
-            <h2 className="text-2xl font-bold md:">Popular products now</h2>
-            <p className="max-lg:hidden text-lg font-medium">
-              {"Explore popular products"}
-              <img src={more} alt="Explore More" className="inline" />
-            </p>
-          </div>
-          <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-4">
-            {data.products.map((product) => (
-              <Product
-                key={product.id}
-                name={product.name}
-                image={require(`../assets/images${product.image}`)}
-                rating={product.rating}
-                reviews={product.reviews}
-                price={product.price}
-                sales={product.sales}
-                shop={product.shop}
-                discount={product.discount}
-              />
-            ))}
-          </div>
-          <p className="lg:hidden text-lg font-medium self-center">
-            {"Explore popular products"}
-            <img src={more} alt="Explore More" className="inline" />
-          </p>
-        </div>
-      </section>
-      <section className="rounded-lg bg-slate-50 max-lg:bg-white max-w-7xl mx-auto py-12 px-5">
-        <div className="flex justify-between items-center">
-          <h3 className="text-2xl font-semibold">Popular Shops</h3>
-          <p className="text-md font-medium">
-            {"View All"}
-            <img src={more} alt="Explore More" className="inline" />
-          </p>
-        </div>
-        <div className="grid place-self-center grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
-          {data.shops.map((store) => (
-            <Shops
-              key={store.id}
-              name={store.name}
-              image={require(`../assets/images${store.image}`)}
-              logo={require(`../assets/images${store.logo}`)}
-              caption={store.caption}
-              reviews={store.reviews}
-              followers={store.followers}
-              sales={store.sales}
-            />
-          ))}
-        </div>
-      </section>
+      <RecommendedProducts />
+      <PopularProducts />
+      <PopularShops />
       <section className="bg-indigo-50 flex flex-col justify-center mt-20">
         <div className="max-w-7xl mx-auto px-5 mt-16 pb-10">
           <div className="max-w-xl">
@@ -327,7 +196,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };
