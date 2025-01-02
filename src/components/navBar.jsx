@@ -164,6 +164,8 @@ function NavBar(props) {
             className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8"
             type="text"
             placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
+            value={props.value}
+            onChange={props.handleChange}
           />
           <img src={search} className="h-6 self-center absolute left-48" />
         </div>
