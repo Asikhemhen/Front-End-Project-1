@@ -102,7 +102,7 @@ function NavBar() {
               alt="menu"
               onClick={toggleMenu}
             />
-            <NavLink to="/#">
+            <NavLink to="/">
               <img className="min-h-16 min-w-16" src={logo} alt="logo" />
             </NavLink>
           </div>
