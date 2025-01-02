@@ -1,4 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import ellipse from "../assets/images/ellipse.svg";
 import globe from "../assets/images/globe.svg";
 import dollar from "../assets/images/dollar.svg";
@@ -13,7 +14,7 @@ import Categories from "./categoryDropDown";
 import close from "../assets/images/closeMenu.svg";
 import OutsideClicks from "./OutsideClicks";
 
-function NavBar() {
+function NavBar(props) {
   // State for large screen dropdown
   const [largeScreenDropdown, setLargeScreenDropdown] = useState(false);
   const [largeScreenSelected, setLargeScreenSelected] =
@@ -126,6 +127,8 @@ function NavBar() {
                 className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8"
                 type="text"
                 placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
+                value={props.value}
+                onChange={props.handleChange}
               />
               <img src={search} className="h-6 self-center absolute left-48" />
             </div>

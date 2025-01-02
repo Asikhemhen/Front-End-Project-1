@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import reset from "../assets/images/closeMenu.svg";
 import arrowDown from "../assets/images/arrowDown.svg";
 import data from "../data/data.json";
@@ -40,6 +40,47 @@ const Search = (props) => {
     product.name.toLowerCase().includes(props.searchItem.toLowerCase())
   );
 
+  const results = () => {
+    if (Object.keys(filteredProducts).length === 0) {
+      return "No result";
+    } else if (Object.keys(filteredProducts).length === 1) {
+      return "result";
+    } else {
+      return "results";
+    }
+  };
+
+  //pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
+
+  const totalPage = Math.ceil(
+    Object.keys(filteredProducts).length / itemsPerPage
+  );
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOFFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredProducts.slice(
+    indexOFFirstItem,
+    indexOfLastItem
+  );
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPage) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handleLastPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   return (
     <div>
       <section className="bg-indigo-50">
@@ -48,13 +89,19 @@ const Search = (props) => {
             <div className="flex justify-between items-center">
               <div>
                 <NavLink to="/#">Home</NavLink>
-                <span>{`   /   Search Results   /   ${props.results} results found for "${props.Search}"`}</span>
+                <span>{`   /   Search Results   /   ${
+                  Object.keys(filteredProducts).length > 0
+                    ? Object.keys(filteredProducts).length
+                    : ""
+                } ${results()} found for "${props.searchItem}"`}</span>
               </div>
               <div>
-                <span>{`${props.results} Prducts - page ${props.pageCurrent} of ${props.pageTotal}`}</span>
+                <span>{`${
+                  Object.keys(filteredProducts).length
+                } Prducts - page ${currentPage} of ${totalPage}`}</span>
               </div>
             </div>
-            <h1 className="text-2xl font-bold">{props.search} Artworks</h1>
+            <h1 className="text-2xl font-bold">{props.searchItem}</h1>
           </div>
         </div>
       </section>
@@ -256,20 +303,59 @@ const Search = (props) => {
               />
             </div>
           </div>
-          <div className="grid  grid-cols-2 lg:grid-cols-3 gap-2 pt-3">
-            {filteredProducts.map((product) => (
-              <Product
-                key={product.id}
-                name={product.name}
-                image={require(`../assets/images${product.image}`)}
-                rating={product.rating}
-                reviews={product.reviews}
-                price={product.price}
-                sales={product.sales}
-                shop={product.shop}
-                discount={product.discount}
-              />
-            ))}
+          <div className="flex flex-col justify-center items-center">
+            <div className="grid  grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 pt-3">
+              {currentItems.map((product) => (
+                <Product
+                  key={product.id}
+                  name={product.name}
+                  image={require(`../assets/images${product.image}`)}
+                  rating={product.rating}
+                  reviews={product.reviews}
+                  price={product.price}
+                  sales={product.sales}
+                  shop={product.shop}
+                  discount={product.discount}
+                />
+              ))}
+            </div>
+            <div className="pt-8">
+              <button
+                className={`h-11 w-11 ml-2 mt-2 text-indigo-950 ${
+                  currentPage === 1
+                    ? "opacity-60 cursor-not-allowed"
+                    : "opacity-100"
+                } bg-stone-200 rounded-md`}
+                disabled={currentPage === 1}
+                onClick={handleLastPage}
+              >
+                {"<"}
+              </button>
+              {[...Array(totalPage)].map((page, index) => (
+                <button
+                  className={`h-11 w-11 ml-2 mt-2  ${
+                    index + 1 === currentPage
+                      ? "text-white bg-indigo-950"
+                      : "text-indigo-950 bg-stone-200"
+                  } rounded-md`}
+                  key={index + 1}
+                  onClick={() => handlePageChange(index + 1)}
+                >
+                  {index + 1}
+                </button>
+              ))}
+              <button
+                className={`h-11 w-11 ml-2 mt-2 text-indigo-950 ${
+                  currentPage === totalPage
+                    ? "opacity-60 cursor-not-allowed"
+                    : "opacity-100"
+                } bg-stone-200 rounded-md`}
+                onClick={handleNextPage}
+                disabled={currentPage === totalPage}
+              >
+                {">"}
+              </button>
+            </div>
           </div>
         </div>
       </div>
