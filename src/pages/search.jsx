@@ -5,6 +5,7 @@ import data from "../data/data.json";
 import Product from "../components/products";
 import CheckboxGroup from "../components/checkbox";
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 //Check Box State
 const Search = (props) => {
@@ -52,7 +53,10 @@ const Search = (props) => {
 
   //pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 1025px)" });
+
+  const itemsPerPage = isLargeScreen ? 15 : 14;
 
   const totalPage = Math.ceil(
     Object.keys(filteredProducts).length / itemsPerPage
@@ -86,7 +90,7 @@ const Search = (props) => {
       <section className="bg-indigo-50">
         <div className="max-w-7xl p-4 mx-auto">
           <div className="flex flex-col justify-center items  min-h-20 gap-2">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center gap-10">
               <div>
                 <NavLink to="/#">Home</NavLink>
                 <span>{`   /   Search Results   /   ${
@@ -304,7 +308,7 @@ const Search = (props) => {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <div className="grid  grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 pt-3">
+            <div className="min-h-screen grid  grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 pt-3">
               {currentItems.map((product) => (
                 <Product
                   key={product.id}

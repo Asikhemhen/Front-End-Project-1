@@ -1,5 +1,11 @@
 import React, { Component, useState } from "react";
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import "./styles/tailwind.css";
 import Home from "./pages/home";
 import Search from "./pages/search";
@@ -14,12 +20,13 @@ const App = () => {
 
   //Navigate to Search Page
   const navigate = useNavigate();
+
   const handleChange = (event) => {
     const value = event.target.value;
     setSearchItem(value);
 
-    if (searchItem) {
-      navigate(`/search-product?=${encodeURIComponent(searchItem)}`);
+    if (value) {
+      navigate(`/search-product?search=${encodeURIComponent(value)}`);
     }
   };
 

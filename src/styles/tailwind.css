@@ -850,6 +850,18 @@ video {
   min-height: 16rem;
 }
 
+.min-h-96 {
+  min-height: 24rem;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1056,6 +1068,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-x-2 {
