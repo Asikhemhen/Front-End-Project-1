@@ -32,7 +32,7 @@ function Footer() {
         <div className="max-w-7xl mx-auto py-3 px-5">
           <div className="text-sm flex flex-col items-center gap-4 sm:flex-row justify-between  text-white py-5">
             <div className="flex space-x-5">
-              <NavLink to="/Home">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
               <NavLink to="/About-US">About Us</NavLink>
               <NavLink to="/Blog">Blog</NavLink>
               <NavLink to="/Careers">Careers</NavLink>

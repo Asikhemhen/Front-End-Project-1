@@ -6,6 +6,7 @@ import Product from "../components/products";
 import CheckboxGroup from "../components/checkbox";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import Pagination from "../components/pagination";
 
 //Check Box State
 const Search = (props) => {
@@ -54,8 +55,7 @@ const Search = (props) => {
   //pagination
   const [currentPage, setCurrentPage] = useState(1);
 
-  const isLargeScreen = useMediaQuery({ query: "(min-width: 1025px)" });
-
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 1024px)" });
   const itemsPerPage = isLargeScreen ? 15 : 14;
 
   const totalPage = Math.ceil(
@@ -69,24 +69,8 @@ const Search = (props) => {
     indexOfLastItem
   );
 
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
-
-  const handleNextPage = () => {
-    if (currentPage < totalPage) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const handleLastPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
   return (
-    <div>
+    <div className="mb-14">
       <section className="bg-indigo-50">
         <div className="max-w-7xl p-4 mx-auto">
           <div className="flex flex-col justify-center items  min-h-20 gap-2">
@@ -323,43 +307,13 @@ const Search = (props) => {
                 />
               ))}
             </div>
-            <div className="pt-8">
-              <button
-                className={`h-11 w-11 ml-2 mt-2 text-indigo-950 ${
-                  currentPage === 1
-                    ? "opacity-60 cursor-not-allowed"
-                    : "opacity-100"
-                } bg-stone-200 rounded-md`}
-                disabled={currentPage === 1}
-                onClick={handleLastPage}
-              >
-                {"<"}
-              </button>
-              {[...Array(totalPage)].map((page, index) => (
-                <button
-                  className={`h-11 w-11 ml-2 mt-2  ${
-                    index + 1 === currentPage
-                      ? "text-white bg-indigo-950"
-                      : "text-indigo-950 bg-stone-200"
-                  } rounded-md`}
-                  key={index + 1}
-                  onClick={() => handlePageChange(index + 1)}
-                >
-                  {index + 1}
-                </button>
-              ))}
-              <button
-                className={`h-11 w-11 ml-2 mt-2 text-indigo-950 ${
-                  currentPage === totalPage
-                    ? "opacity-60 cursor-not-allowed"
-                    : "opacity-100"
-                } bg-stone-200 rounded-md`}
-                onClick={handleNextPage}
-                disabled={currentPage === totalPage}
-              >
-                {">"}
-              </button>
-            </div>
+            <Pagination
+              totalItems={Object.keys(filteredProducts).length}
+              itemsPerPage={itemsPerPage}
+              setCurrentPage={setCurrentPage}
+              currentPage={currentPage}
+              isLargeScreen={isLargeScreen}
+            />
           </div>
         </div>
       </div>
