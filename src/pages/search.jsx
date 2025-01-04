@@ -28,6 +28,11 @@ const Search = (props) => {
     day3: false,
   });
 
+  //Count the number of filters selected
+  const filtersCount = Object.values(checkedItems).filter(
+    (value) => value === true
+  ).length;
+
   //Filtered Products
   const [customFiltered, setCustomFiltered] = useState(data.products);
 
@@ -43,6 +48,27 @@ const Search = (props) => {
       ...prevState,
       [name]: checked,
     }));
+  };
+
+  // Function to reset all items to false onClick reset
+  const onClickReset = () => {
+    setCheckedItems({
+      anywhere: false,
+      nigeria: false,
+      customLocation: false,
+      allPrices: false,
+      under25: false,
+      usd50to100: false,
+      over100: false,
+      customPrice: false,
+      allItems: false,
+      handmade: false,
+      vintage: false,
+      onSale: false,
+      freeShipping: false,
+      day1: false,
+      day3: false,
+    });
   };
 
   // Filter products based on search term
@@ -138,7 +164,9 @@ const Search = (props) => {
     );
   }
 
-  console.log(filteredProducts[0].delivery * 2);
+  console.log(
+    filteredProducts.filter((product) => product.delivery === undefined)
+  );
 
   const handleChangeLocation = (event) => {
     setLocation(event.target.value);
@@ -188,11 +216,13 @@ const Search = (props) => {
             <div className="flex justify-between items-center gap-10">
               <div>
                 <NavLink to="/#">Home</NavLink>
-                <span>{`   /   Search Results   /   ${
-                  Object.keys(filteredProducts).length > 0
-                    ? Object.keys(filteredProducts).length
-                    : ""
-                } ${results()} found for "${props.searchItem}"`}</span>
+                {props.searchItem !== "" && (
+                  <span>{`   /   Search Results   /   ${
+                    Object.keys(filteredProducts).length > 0
+                      ? Object.keys(filteredProducts).length
+                      : ""
+                  } ${results()} found for "${props.searchItem}"`}</span>
+                )}
               </div>
               <div>
                 <span>{`${
@@ -209,16 +239,16 @@ const Search = (props) => {
           <div className="flex items-center gap-1">
             <span className="text-lg font-bold">Filters</span>
             <div className="flex justify-center items-center rounded-full bg-yellow-500 h-5 w-5 text-xs font-medium">
-              3
+              {filtersCount}
             </div>
-            <span className="hover:cursor-pointer text-sm">
+            <button className="text-sm" onClick={onClickReset}>
               <img
                 src={reset}
                 alt="reset"
                 className="inline h-4 w-4 mb-1 ml-2 mr-1"
               />
               Reset
-            </span>
+            </button>
           </div>
           <div>
             <div className="flex relative h-10 basis-full">
@@ -275,7 +305,7 @@ const Search = (props) => {
                 onChange={handleChangeLocation}
                 value={location}
                 placeholder="Enter specific location here"
-                className="h-8 w-full text-xs text-center px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950"
+                className="h-8 w-full text-xs text-center px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950 focus:ring-1 focus:ring-indigo-900 focus:rounded-md focus:outline-none"
               />
             </div>
             <div className="flex flex-col max-w-44">
@@ -324,7 +354,7 @@ const Search = (props) => {
                   value={lowPrice}
                   onChange={handleChangeLowPrice}
                   placeholder="Low"
-                  className="h-8 w-full text-xs text-center px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950"
+                  className="h-8 w-full text-xs text-center px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950 focus:ring-1 focus:ring-indigo-900 focus:rounded-md focus:outline-none"
                 />
                 <span>to</span>
                 <input
@@ -333,7 +363,7 @@ const Search = (props) => {
                   value={highPrice}
                   onChange={handleChangeHighPrice}
                   placeholder="High"
-                  className="h-8 w-full text-center text-xs px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950"
+                  className="h-8 w-full text-center text-xs px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950 focus:ring-1 focus:ring-indigo-900 focus:rounded-md focus:outline-none"
                 />
                 <button
                   className="h-8 w-full bg-indigo-900 text-white text-xs rounded-md"

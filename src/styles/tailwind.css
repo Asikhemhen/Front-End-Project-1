@@ -1810,6 +1810,10 @@ body {
   border-radius: 0.5rem;
 }
 
+.focus\:rounded-md:focus {
+  border-radius: 0.375rem;
+}
+
 .focus\:rounded-r-lg:focus {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
