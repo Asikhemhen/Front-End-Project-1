@@ -292,9 +292,9 @@
       "shop": "Tola Artz & Designs",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 2,
@@ -308,9 +308,9 @@
       "shop": "African Craftworks",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 3,
@@ -324,9 +324,9 @@
       "shop": "Ethiopian Delights",
       "image": "/product.svg",
       "location": "Ethiopia",
-      "specialOffer": "organic",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "organic",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 4,
@@ -340,9 +340,9 @@
       "shop": "Royal Kente Designs",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 5,
@@ -356,9 +356,9 @@
       "shop": "Beads & Beyond",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 6,
@@ -372,9 +372,9 @@
       "shop": "Eco Chic Creations",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 7,
@@ -388,9 +388,9 @@
       "shop": "Heritage Arts Studio",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 8,
@@ -404,9 +404,9 @@
       "shop": "Spice Traders",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "organic",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "organic",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 9,
@@ -420,9 +420,9 @@
       "shop": "African Wear",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 10,
@@ -436,9 +436,9 @@
       "shop": "Elegant Jewelry",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 11,
@@ -452,9 +452,9 @@
       "shop": "Sisal Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 12,
@@ -468,9 +468,9 @@
       "shop": "Beads & Beyond",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 13,
@@ -484,9 +484,9 @@
       "shop": "Wooden Wonders",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 14,
@@ -500,9 +500,9 @@
       "shop": "Leathercraft",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 15,
@@ -516,9 +516,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 16,
@@ -532,9 +532,9 @@
       "shop": "Artisan Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 17,
@@ -548,9 +548,9 @@
       "shop": "Traditional Attire",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 18,
@@ -564,9 +564,9 @@
       "shop": "Eco Living",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 19,
@@ -580,9 +580,9 @@
       "shop": "African Home Decor",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 20,
@@ -596,9 +596,9 @@
       "shop": "Woodcrafts",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 21,
@@ -612,9 +612,9 @@
       "shop": "African Drums",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 22,
@@ -628,9 +628,9 @@
       "shop": "Ceramic Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 23,
@@ -644,9 +644,9 @@
       "shop": "African Beads",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 24,
@@ -660,9 +660,9 @@
       "shop": "Wooden Artifacts",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 25,
@@ -676,9 +676,9 @@
       "shop": "Artistic Expressions",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 26,
@@ -692,9 +692,9 @@
       "shop": "African Artisans",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 27,
@@ -708,9 +708,9 @@
       "shop": "Beads of Africa",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 28,
@@ -724,9 +724,9 @@
       "shop": "African Drums",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 29,
@@ -740,9 +740,9 @@
       "shop": "Moroccan Crafts",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 30,
@@ -756,9 +756,9 @@
       "shop": "Wooden Wonders",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 31,
@@ -772,9 +772,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 32,
@@ -788,9 +788,9 @@
       "shop": "Maasai Jewelry",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 33,
@@ -804,9 +804,9 @@
       "shop": "Clay Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 34,
@@ -820,9 +820,9 @@
       "shop": "Leathercraft",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 35,
@@ -836,9 +836,9 @@
       "shop": "African Beads",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 36,
@@ -852,9 +852,9 @@
       "shop": "Wool Wonders",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 37,
@@ -868,9 +868,9 @@
       "shop": "Wooden Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 38,
@@ -884,9 +884,9 @@
       "shop": "Eco Chic Creations",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 39,
@@ -900,9 +900,9 @@
       "shop": "African Bags & Co.",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 40,
@@ -916,9 +916,9 @@
       "shop": "African Wall Art",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 41,
@@ -932,9 +932,9 @@
       "shop": "Tribal Jewels",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 42,
@@ -948,9 +948,9 @@
       "shop": "Silk Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 43,
@@ -964,9 +964,9 @@
       "shop": "Handmade Wonders",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 44,
@@ -980,9 +980,9 @@
       "shop": "Handmade Wonders",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 45,
@@ -996,9 +996,9 @@
       "shop": "Wool Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 46,
@@ -1012,9 +1012,9 @@
       "shop": "African Art Studio",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 47,
@@ -1028,9 +1028,9 @@
       "shop": "Pottery Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 48,
@@ -1044,9 +1044,9 @@
       "shop": "Leather Works",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 49,
@@ -1060,9 +1060,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 50,
@@ -1076,9 +1076,9 @@
       "shop": "Wooden Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 51,
@@ -1092,9 +1092,9 @@
       "shop": "African Crafts",
       "image": "/product.svg",
       "location": "Côte d'Ivoire",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 52,
@@ -1108,9 +1108,9 @@
       "shop": "Bead Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 53,
@@ -1124,9 +1124,9 @@
       "shop": "African Furniture",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 54,
@@ -1140,9 +1140,9 @@
       "shop": "African Jewels",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 55,
@@ -1156,9 +1156,9 @@
       "shop": "Ghana Baskets",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 56,
@@ -1172,9 +1172,9 @@
       "shop": "Kimonos of Africa",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 57,
@@ -1188,9 +1188,9 @@
       "shop": "Moroccan Leatherworks",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 58,
@@ -1204,9 +1204,9 @@
       "shop": "Wooden Wonders",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 59,
@@ -1220,9 +1220,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 60,
@@ -1236,9 +1236,9 @@
       "shop": "African Carvings",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 61,
@@ -1252,9 +1252,9 @@
       "shop": "Silk Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 62,
@@ -1268,9 +1268,9 @@
       "shop": "African Gems",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 63,
@@ -1284,9 +1284,9 @@
       "shop": "Basket Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 64,
@@ -1300,9 +1300,9 @@
       "shop": "Wool Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 65,
@@ -1316,9 +1316,9 @@
       "shop": "African Treasures",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 66,
@@ -1332,9 +1332,9 @@
       "shop": "Wooden Crafts",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 67,
@@ -1348,9 +1348,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 68,
@@ -1364,9 +1364,9 @@
       "shop": "Soapstone Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 69,
@@ -1380,9 +1380,9 @@
       "shop": "Cotton Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 70,
@@ -1396,9 +1396,9 @@
       "shop": "African Hats",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 71,
@@ -1412,9 +1412,9 @@
       "shop": "African Textiles",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 72,
@@ -1428,9 +1428,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 73,
@@ -1444,9 +1444,9 @@
       "shop": "Art Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 74,
@@ -1460,9 +1460,9 @@
       "shop": "Leather Works",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 75,
@@ -1476,9 +1476,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 76,
@@ -1492,9 +1492,9 @@
       "shop": "African Wall Art",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 77,
@@ -1508,9 +1508,9 @@
       "shop": "Bead Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 78,
@@ -1524,9 +1524,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 79,
@@ -1540,9 +1540,9 @@
       "shop": "Basket Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 80,
@@ -1556,9 +1556,9 @@
       "shop": "Leather Works",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 81,
@@ -1572,9 +1572,9 @@
       "shop": "Wooden Artworks",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 82,
@@ -1588,9 +1588,9 @@
       "shop": "Rug Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 83,
@@ -1604,9 +1604,9 @@
       "shop": "Wooden Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 84,
@@ -1620,9 +1620,9 @@
       "shop": "Bead Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 85,
@@ -1636,9 +1636,9 @@
       "shop": "Soapstone Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 86,
@@ -1652,9 +1652,9 @@
       "shop": "Cotton Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 87,
@@ -1668,9 +1668,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 88,
@@ -1684,9 +1684,9 @@
       "shop": "Cotton Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 89,
@@ -1700,9 +1700,9 @@
       "shop": "Wooden Artworks",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 90,
@@ -1716,9 +1716,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 91,
@@ -1732,9 +1732,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 92,
@@ -1748,9 +1748,9 @@
       "shop": "Scarf Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 93,
@@ -1764,9 +1764,9 @@
       "shop": "Bead Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 94,
@@ -1780,9 +1780,9 @@
       "shop": "Clay Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 95,
@@ -1796,9 +1796,9 @@
       "shop": "Wooden Artworks",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 96,
@@ -1812,9 +1812,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 97,
@@ -1828,9 +1828,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 98,
@@ -1844,9 +1844,9 @@
       "shop": "Bead Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 99,
@@ -1860,9 +1860,9 @@
       "shop": "Beach Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 100,
@@ -1876,9 +1876,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 101,
@@ -1892,9 +1892,9 @@
       "shop": "BeadWorks",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 102,
@@ -1908,9 +1908,9 @@
       "shop": "Trendy Wear",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 103,
@@ -1924,9 +1924,9 @@
       "shop": "Artisans Hub",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 104,
@@ -1940,9 +1940,9 @@
       "shop": "Healthy Grains",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 105,
@@ -1956,9 +1956,9 @@
       "shop": "Leather Craft",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 106,
@@ -1972,9 +1972,9 @@
       "shop": "HomeStyle",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 107,
@@ -1988,9 +1988,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 108,
@@ -2004,9 +2004,9 @@
       "shop": "African Attire",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 109,
@@ -2020,9 +2020,9 @@
       "shop": "Basketry Art",
       "image": "/product.svg",
       "location": "Zimbabwe",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 110,
@@ -2036,9 +2036,9 @@
       "shop": "Spice World",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 111,
@@ -2052,9 +2052,9 @@
       "shop": "Crafted Leather",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 112,
@@ -2068,9 +2068,9 @@
       "shop": "Wooden Wonders",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 113,
@@ -2084,9 +2084,9 @@
       "shop": "Pillow Paradise",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 114,
@@ -2100,9 +2100,9 @@
       "shop": "Golden Touch",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 115,
@@ -2116,9 +2116,9 @@
       "shop": "Coffee Haven",
       "image": "/product.svg",
       "location": "Ethiopia",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 116,
@@ -2132,9 +2132,9 @@
       "shop": "Leather Works",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 117,
@@ -2148,9 +2148,9 @@
       "shop": "Wooden Art",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 118,
@@ -2164,9 +2164,9 @@
       "shop": "BeadWorks",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 119,
@@ -2180,9 +2180,9 @@
       "shop": "Clay Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 120,
@@ -2196,9 +2196,9 @@
       "shop": "Tea World",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 121,
@@ -2212,9 +2212,9 @@
       "shop": "Beads & Crafts",
       "image": "/product.svg",
       "location": "Senegal",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 122,
@@ -2228,9 +2228,9 @@
       "shop": "Style Africa",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 123,
@@ -2244,9 +2244,9 @@
       "shop": "African Art Gallery",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 124,
@@ -2260,9 +2260,9 @@
       "shop": "African Spice World",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 125,
@@ -2276,9 +2276,9 @@
       "shop": "Crafted Leather",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 126,
@@ -2292,9 +2292,9 @@
       "shop": "Boho Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 127,
@@ -2308,9 +2308,9 @@
       "shop": "BeadWorks",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 128,
@@ -2324,9 +2324,9 @@
       "shop": "African Couture",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 129,
@@ -2340,9 +2340,9 @@
       "shop": "Wooden Wonders",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 130,
@@ -2356,9 +2356,9 @@
       "shop": "Taste of Ghana",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 131,
@@ -2372,9 +2372,9 @@
       "shop": "Leather Lux",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 132,
@@ -2388,9 +2388,9 @@
       "shop": "Ceramic Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 133,
@@ -2404,9 +2404,9 @@
       "shop": "Beads & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 134,
@@ -2420,9 +2420,9 @@
       "shop": "HomeStyle",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 135,
@@ -2436,9 +2436,9 @@
       "shop": "Rug Gallery",
       "image": "/product.svg",
       "location": "Ethiopia",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 136,
@@ -2452,9 +2452,9 @@
       "shop": "Spice World",
       "image": "/product.svg",
       "location": "Morocco",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 137,
@@ -2468,9 +2468,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 138,
@@ -2484,9 +2484,9 @@
       "shop": "Pillow Paradise",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 139,
@@ -2500,9 +2500,9 @@
       "shop": "Crafted Leather",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 140,
@@ -2516,9 +2516,9 @@
       "shop": "Tea World",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 141,
@@ -2532,9 +2532,9 @@
       "shop": "Tote Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 142,
@@ -2548,9 +2548,9 @@
       "shop": "Beads & Crafts",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 143,
@@ -2564,9 +2564,9 @@
       "shop": "Curtain Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 144,
@@ -2580,9 +2580,9 @@
       "shop": "Clay Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 145,
@@ -2596,9 +2596,9 @@
       "shop": "Basket Creations",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 146,
@@ -2612,9 +2612,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 147,
@@ -2628,9 +2628,9 @@
       "shop": "Ghanaian Foods",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 148,
@@ -2644,9 +2644,9 @@
       "shop": "BeadWorks",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 149,
@@ -2660,9 +2660,9 @@
       "shop": "Urban Africa",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 150,
@@ -2676,9 +2676,9 @@
       "shop": "Wooden Creations",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 151,
@@ -2692,9 +2692,9 @@
       "shop": "Tea World",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 152,
@@ -2708,9 +2708,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 153,
@@ -2724,9 +2724,9 @@
       "shop": "Style Africa",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 154,
@@ -2740,9 +2740,9 @@
       "shop": "Leather Lux",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 155,
@@ -2756,9 +2756,9 @@
       "shop": "Beads & Crafts",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 156,
@@ -2772,9 +2772,9 @@
       "shop": "Ceramic Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 157,
@@ -2788,9 +2788,9 @@
       "shop": "African Foods",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 158,
@@ -2804,9 +2804,9 @@
       "shop": "Wooden Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 159,
@@ -2820,9 +2820,9 @@
       "shop": "Beads & Gems",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 160,
@@ -2836,9 +2836,9 @@
       "shop": "HomeStyle",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 161,
@@ -2852,9 +2852,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 162,
@@ -2868,9 +2868,9 @@
       "shop": "African Art Gallery",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 163,
@@ -2884,9 +2884,9 @@
       "shop": "Leather Lux",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 164,
@@ -2900,9 +2900,9 @@
       "shop": "African Spices",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 165,
@@ -2916,9 +2916,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 166,
@@ -2932,9 +2932,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 167,
@@ -2948,9 +2948,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 168,
@@ -2964,9 +2964,9 @@
       "shop": "Beads & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 169,
@@ -2980,9 +2980,9 @@
       "shop": "African Art Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 170,
@@ -2996,9 +2996,9 @@
       "shop": "African Delights",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 171,
@@ -3012,9 +3012,9 @@
       "shop": "HomeStyle",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 172,
@@ -3028,9 +3028,9 @@
       "shop": "Beads & Crafts",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 173,
@@ -3044,9 +3044,9 @@
       "shop": "Leather Creations",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 174,
@@ -3060,9 +3060,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 175,
@@ -3076,9 +3076,9 @@
       "shop": "Handwoven Art",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 176,
@@ -3092,9 +3092,9 @@
       "shop": "Spices of Africa",
       "image": "/product.svg",
       "location": "Jamaica",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 177,
@@ -3108,9 +3108,9 @@
       "shop": "Ceramic Creations",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 178,
@@ -3124,9 +3124,9 @@
       "shop": "Style Africa",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 179,
@@ -3140,9 +3140,9 @@
       "shop": "Sweet Africa",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 180,
@@ -3156,9 +3156,9 @@
       "shop": "Natural Africa",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 181,
@@ -3172,9 +3172,9 @@
       "shop": "Beads & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 182,
@@ -3188,9 +3188,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 183,
@@ -3204,9 +3204,9 @@
       "shop": "African Threads",
       "image": "/product.svg",
       "location": "Uganda",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 184,
@@ -3220,9 +3220,9 @@
       "shop": "African Superfoods",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 185,
@@ -3236,9 +3236,9 @@
       "shop": "Wooden Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 186,
@@ -3252,9 +3252,9 @@
       "shop": "Style Africa",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 187,
@@ -3268,9 +3268,9 @@
       "shop": "African Essentials",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 188,
@@ -3284,9 +3284,9 @@
       "shop": "Jewels & Gems",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 189,
@@ -3300,9 +3300,9 @@
       "shop": "Wood Creations",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "3"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 3
     },
     {
       "id": 190,
@@ -3316,9 +3316,9 @@
       "shop": "African Style",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 191,
@@ -3332,9 +3332,9 @@
       "shop": "EcoCrafts Africa",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 192,
@@ -3348,9 +3348,9 @@
       "shop": "Kente Creations",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 193,
@@ -3364,9 +3364,9 @@
       "shop": "Beadworks Studio",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "1"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 1
     },
     {
       "id": 194,
@@ -3380,9 +3380,9 @@
       "shop": "Tote Africa",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     },
     {
       "id": 195,
@@ -3396,9 +3396,9 @@
       "shop": "Natural Glow",
       "image": "/product.svg",
       "location": "Nigeria",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 196,
@@ -3412,9 +3412,9 @@
       "shop": "CarveCraft",
       "image": "/product.svg",
       "location": "Tanzania",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 197,
@@ -3428,9 +3428,9 @@
       "shop": "Ankara Styles",
       "image": "/product.svg",
       "location": "Ghana",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "2"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 2
     },
     {
       "id": 198,
@@ -3444,9 +3444,9 @@
       "shop": "Bead Bliss",
       "image": "/product.svg",
       "location": "South Africa",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "1"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 1
     },
     {
       "id": 199,
@@ -3460,9 +3460,9 @@
       "shop": "LeatherWorks Co.",
       "image": "/product.svg",
       "location": "Ethiopia",
-      "specialOffer": "handmade",
-      "itemType": "onsale",
-      "delivery": "3"
+      "itemType": "handmade",
+      "specialOffer": "onsale",
+      "delivery": 3
     },
     {
       "id": 200,
@@ -3476,9 +3476,9 @@
       "shop": "Tribal Treasures",
       "image": "/product.svg",
       "location": "Kenya",
-      "specialOffer": "vintage",
-      "itemType": "freeshipping",
-      "delivery": "2"
+      "itemType": "vintage",
+      "specialOffer": "freeshipping",
+      "delivery": 2
     }
   ]
 }

@@ -28,6 +28,14 @@ const Search = (props) => {
     day3: false,
   });
 
+  //Filtered Products
+  const [customFiltered, setCustomFiltered] = useState(data.products);
+
+  //Custom Checkbox states
+  const [location, setLocation] = useState("");
+  const [lowPrice, setLowPrice] = useState("");
+  const [highPrice, setHighPrice] = useState("");
+
   //Update the state of the checkboxes
   const handleChange = (event) => {
     const { name, checked } = event.target;
@@ -38,10 +46,113 @@ const Search = (props) => {
   };
 
   // Filter products based on search term
-  const filteredProducts = data.products.filter((product) =>
+  let filteredProducts = data.products.filter((product) =>
     product.name.toLowerCase().includes(props.searchItem.toLowerCase())
   );
 
+  // Add Filter Based On Category
+  if (props.category.toLowerCase() !== "all categories") {
+    filteredProducts = filteredProducts.filter((product) =>
+      product.categories.toLowerCase().includes(props.category.toLowerCase())
+    );
+  }
+
+  //Filter based on Location
+  if (!checkedItems.anywhere) {
+    if (checkedItems.nigeria) {
+      filteredProducts = filteredProducts.filter((product) =>
+        product.location.toLowerCase().includes("nigeria")
+      );
+    } else if (checkedItems.customLocation) {
+      filteredProducts = filteredProducts.filter((product) =>
+        product.location.toLowerCase().includes(location.toLocaleLowerCase())
+      );
+    }
+  }
+
+  //Filter based on Prices
+  if (!checkedItems.allPrices) {
+    if (checkedItems.under25) {
+      filteredProducts = filteredProducts.filter(
+        (product) => product.price < 25
+      );
+    } else if (checkedItems.usd50to100) {
+      filteredProducts = filteredProducts.filter(
+        (product) => product.price >= 50 && product.price <= 100
+      );
+    } else if (checkedItems.over100) {
+      filteredProducts = filteredProducts.filter(
+        (product) => product.price > 100
+      );
+    }
+  }
+
+  //Filter based on custom price
+  const handleClickCustonPriceOk = () => {
+    if (checkedItems.customPrice) {
+      console.log(lowPrice, highPrice);
+      filteredProducts = filteredProducts.filter(
+        (product) => product.price >= lowPrice && product.price <= highPrice
+      );
+    }
+    setCustomFiltered(filteredProducts);
+  };
+
+  filteredProducts =
+    checkedItems.customPrice && filteredProducts !== customFiltered
+      ? customFiltered
+      : filteredProducts;
+
+  //Filter based on Item Types
+  if (!checkedItems.allItems) {
+    if (checkedItems.handmade) {
+      filteredProducts = filteredProducts.filter((product) =>
+        product.itemType.toLowerCase().includes("handmade")
+      );
+    } else if (checkedItems.vintage) {
+      filteredProducts = filteredProducts.filter((product) =>
+        product.itemType.toLowerCase().includes("vintage")
+      );
+    }
+  }
+
+  //Filter based on special offers
+  if (checkedItems.onSale) {
+    filteredProducts = filteredProducts.filter((product) =>
+      product.specialOffer.toLowerCase().includes("onsale")
+    );
+  } else if (checkedItems.freeShipping) {
+    filteredProducts = filteredProducts.filter((product) =>
+      product.specialOffer.toLowerCase().includes("freeshipping")
+    );
+  }
+
+  //Filter based on Delivery Type
+  if (checkedItems.day1) {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.delivery === 1
+    );
+  } else if (checkedItems.day3) {
+    filteredProducts = filteredProducts.filter(
+      (product) => product.delivery > 1
+    );
+  }
+
+  console.log(filteredProducts[0].delivery * 2);
+
+  const handleChangeLocation = (event) => {
+    setLocation(event.target.value);
+  };
+
+  const handleChangeLowPrice = (event) => {
+    setLowPrice(event.target.value);
+  };
+
+  const handleChangeHighPrice = (event) => {
+    setHighPrice(event.target.value);
+  };
+
+  //Adjust "result" from singular to plural
   const results = () => {
     if (Object.keys(filteredProducts).length === 0) {
       return "No result";
@@ -161,7 +272,8 @@ const Search = (props) => {
               <input
                 type="text"
                 name="custom-location"
-                // onChange={handleChange}
+                onChange={handleChangeLocation}
+                value={location}
                 placeholder="Enter specific location here"
                 className="h-8 w-full text-xs text-center px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950"
               />
@@ -209,7 +321,8 @@ const Search = (props) => {
                 <input
                   type="text"
                   name="priceLow"
-                  // onChange={handleChange}
+                  value={lowPrice}
+                  onChange={handleChangeLowPrice}
                   placeholder="Low"
                   className="h-8 w-full text-xs text-center px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950"
                 />
@@ -217,11 +330,15 @@ const Search = (props) => {
                 <input
                   type="text"
                   name="priceHigh"
-                  // onChange={handleChange}
+                  value={highPrice}
+                  onChange={handleChangeHighPrice}
                   placeholder="High"
                   className="h-8 w-full text-center text-xs px-2 mt-1 bg-stone-100 border-stone-400 rounded-md accent-indigo-950"
                 />
-                <button className="h-8 w-full bg-indigo-900 text-white text-xs rounded-md">
+                <button
+                  className="h-8 w-full bg-indigo-900 text-white text-xs rounded-md"
+                  onClick={handleClickCustonPriceOk}
+                >
                   OK
                 </button>
               </div>

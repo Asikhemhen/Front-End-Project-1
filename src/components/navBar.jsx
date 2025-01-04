@@ -14,47 +14,16 @@ import Categories from "./categoryDropDown";
 import close from "../assets/images/closeMenu.svg";
 import OutsideClicks from "./OutsideClicks";
 
-function NavBar(props) {
-  // State for large screen dropdown
-  const [largeScreenDropdown, setLargeScreenDropdown] = useState(false);
-  const [largeScreenSelected, setLargeScreenSelected] =
-    useState("All Categories");
+function Test(props) {
+  // Refs for dropdowns
+  const dropDownRef = useRef(null);
 
-  // State for small screen dropdown
-  const [smallScreenDropdown, setSmallScreenDropdown] = useState(false);
-  const [smallScreenSelected, setSmallScreenSelected] =
-    useState("All Categories");
+  // Handle outside click for dropdown
+  OutsideClicks(dropDownRef, () => props.setDropDown(false));
 
   //State for Menu
   let [menuState, setMenuState] = useState(false);
   let menuRef = useRef(null);
-
-  // Refs for dropdowns
-  const largeScreenRef = useRef(null);
-  const smallScreenRef = useRef(null);
-
-  // Handle outside click for large screen dropdown
-  OutsideClicks(largeScreenRef, () => setLargeScreenDropdown(false));
-
-  // Handle outside click for small screen dropdown
-  OutsideClicks(smallScreenRef, () => setSmallScreenDropdown(false));
-
-  // Toggle dropdowns
-  const toggleLargeScreenDropdown = () =>
-    setLargeScreenDropdown((prev) => !prev);
-  const toggleSmallScreenDropdown = () =>
-    setSmallScreenDropdown((prev) => !prev);
-
-  // Handle dropdown item click
-  const handleLargeScreenItemClick = (category) => {
-    setLargeScreenSelected(category);
-    setLargeScreenDropdown(false);
-  };
-
-  const handleSmallScreenItemClick = (category) => {
-    setSmallScreenSelected(category);
-    setSmallScreenDropdown(false);
-  };
 
   //Toggle Munu
   const toggleMenu = () => {
@@ -95,7 +64,7 @@ function NavBar(props) {
         </div>
       </section>
       <section class="bg-white text-white max-w-7xl mx-auto py-3 px-5">
-        <div className="flex justify-between items-center space-x-20">
+        <div className="grid grid-cols-2 grid-rows-2 sm:flex justify-between items-center">
           <div className="flex">
             <img
               className="text-3xl menu hidden max-lg:flex focus:outline-none text-stone-500 mr-4 hover:cursor-pointer hover:opacity-60"
@@ -103,28 +72,33 @@ function NavBar(props) {
               alt="menu"
               onClick={toggleMenu}
             />
-            <NavLink to="/">
+            <NavLink to="/#">
               <img className="min-h-16 min-w-16" src={logo} alt="logo" />
             </NavLink>
           </div>
-          <div className="header-container flex justify-end basis-full">
-            <div className="hidden sm:flex search-container basis-full border rounded-lg bg-stone-50 h-12  border-stone-300 relative">
-              <div ref={largeScreenRef}>
+          <div className="order-3 col-span-2 sm:order-none flex justify-end basis-full">
+            <div className="flex search-container sm:ml-20 sm:mr-10 lg:mr-20 basis-full border rounded-lg bg-stone-50 h-12  border-stone-300 relative">
+              <div ref={dropDownRef}>
                 <button
-                  className="min-w-40 h-full border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
-                  onClick={toggleLargeScreenDropdown}
+                  className="min-w-40 h-full border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium pr-5"
+                  onClick={props.toggleDropDown}
                 >
-                  {largeScreenSelected}{" "}
-                  <img src={arrowDown} className="inline" alt="arrow-down" />
+                  {props.dropDownSelected}{" "}
+                  <img
+                    src={arrowDown}
+                    className="absolute top-3 left-32"
+                    alt="arrow-down"
+                  />
                 </button>
+
                 <Categories
-                  display={largeScreenDropdown ? "flex" : "hidden"}
-                  handleClickCategoryItem={handleLargeScreenItemClick}
+                  display={props.dropDown ? "flex" : "hidden"}
+                  handleClickCategoryItem={props.handleDropDownItemClick}
                   top="top-12"
                 />
               </div>
               <input
-                className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8"
+                className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8 focus:ring-1 focus:ring-indigo-900 focus:rounded-r-lg focus:outline-none"
                 type="text"
                 placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
                 value={props.value}
@@ -132,6 +106,8 @@ function NavBar(props) {
               />
               <img src={search} className="h-6 self-center absolute left-48" />
             </div>
+          </div>
+          <div className="flex justify-end items-center">
             <NavLink
               className="max-lg:hidden self-center text-indigo-950 hover:opercity-90 mx-5"
               to="/Login"
@@ -144,30 +120,6 @@ function NavBar(props) {
             <img src={heart} className="mx-5" alt="heart" />
             <img src={shoppingCart} className="" alt="shoppingCart" />
           </div>
-        </div>
-        <div className="flex sm:hidden basis-full mt-3 border rounded-lg bg-stone-50 h-12 border-stone-300 relative">
-          <div ref={smallScreenRef}>
-            <button
-              className="min-w-40 h-full border-r border-stone-300 rounded-l-md bg-stone-50 text-indigo-950 text-sm font-medium"
-              onClick={toggleSmallScreenDropdown}
-            >
-              {smallScreenSelected}{" "}
-              <img src={arrowDown} className="inline" alt="arrow-down" />
-            </button>
-            <Categories
-              display={smallScreenDropdown ? "flex" : "hidden"}
-              handleClickCategoryItem={handleSmallScreenItemClick}
-              top="top-12"
-            />
-          </div>
-          <input
-            className="w-full bg-transparent text-sm text-stone-900 pl-16 pr-8"
-            type="text"
-            placeholder="Search choice of Fabrics, Art and Fashion, Jewelleries and more..."
-            value={props.value}
-            onChange={props.handleChange}
-          />
-          <img src={search} className="h-6 self-center absolute left-48" />
         </div>
       </section>
       {/* Menu Bar */}
@@ -214,4 +166,4 @@ function NavBar(props) {
   );
 }
 
-export default NavBar;
+export default Test;

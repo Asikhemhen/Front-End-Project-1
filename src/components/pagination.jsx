@@ -91,22 +91,8 @@ const Pagination = (props) => {
     return pageNumbers;
   };
 
-  const [largeScreen, setLargeScreen] = useState(false);
-  const isLargeScreen = useMediaQuery({ query: "(min-width: 1024px)" });
-
-  useEffect(() => {
-    if (isLargeScreen !== largeScreen) {
-      setLargeScreen(isLargeScreen);
-
-      if (props.currentPage > totalPages) {
-        {
-          handlePageChange(totalPages - 1);
-        }
-      }
-    }
-  }, [largeScreen, isLargeScreen]);
-
   if (props.currentPage > totalPages) {
+    //Adjust pages properly when screen size changes
     handlePageChange(totalPages - 1);
   }
 
