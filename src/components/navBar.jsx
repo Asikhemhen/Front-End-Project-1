@@ -114,7 +114,7 @@ function Test(props) {
             >
               Login
             </NavLink>
-            <button className="max-lg:hidden min-w-24 border border-indigo-950 rounded-md text-indigo-950 text-md font-medium">
+            <button className="max-lg:hidden min-w-24 h-12 border border-indigo-950 rounded-md text-indigo-950 text-md font-medium">
               Sign Up
             </button>
             <img src={heart} className="mx-5" alt="heart" />
