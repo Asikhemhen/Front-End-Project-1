@@ -13,8 +13,14 @@ import menu from "../assets/images/menu.svg";
 import Categories from "./categoryDropDown";
 import close from "../assets/images/closeMenu.svg";
 import OutsideClicks from "./OutsideClicks";
+import dark from "../assets/images/darkMode.svg";
+import light from "../assets/images/lightMode.svg";
+import { useDispatch } from "react-redux";
+import { toggleTheme } from "../state/themeSlice";
 
-function Test(props) {
+function NavBar(props) {
+  const dispatch = useDispatch();
+
   // Refs for dropdowns
   const dropDownRef = useRef(null);
 
@@ -40,7 +46,7 @@ function Test(props) {
 
   return (
     <header>
-      <section class="bg-indigo-950 text-white sticky top-0 z-10">
+      <section class="bg-indigo-950 text-white w-full fixed top-0 z-10">
         <div class="max-w-7xl mx-auto py-3 px-5 flex items-center justify-end sm:justify-between">
           <NavLink className="hidden sm:flex text-sm" to="/open-a-store">
             Open a Giri store
@@ -59,11 +65,18 @@ function Test(props) {
               <NavLink className="hover:opercity-90 flex" to="/eng-uk">
                 ENG(UK)
               </NavLink>
+              <img src={ellipse} alt="ellipse" />
+              <img
+                onMouseDown={() => dispatch(toggleTheme())}
+                src={props.theme === "dark" ? dark : light}
+                alt={props.theme === "moon icon" ? dark : "sun icon"}
+                className="hover:cursor-pointer"
+              />
             </nav>
           </div>
         </div>
       </section>
-      <section class="bg-white text-white max-w-7xl mx-auto py-3 px-5">
+      <section class="bg-white  text-white max-w-7xl mx-auto mt-12 py-3 px-5">
         <div className="grid grid-cols-2 grid-rows-2 sm:flex justify-between items-center">
           <div className="flex">
             <img
@@ -166,4 +179,4 @@ function Test(props) {
   );
 }
 
-export default Test;
+export default NavBar;

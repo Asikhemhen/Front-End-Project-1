@@ -2,10 +2,24 @@ import heart from "../assets/images/heart 2.svg";
 import star from "../assets/images/star.svg";
 import ellipse from "../assets/images/ellipse.svg";
 import shops from "../assets/images/shop-icon.svg";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { setSelectedProduct } from "../state/productSlice";
 
 const Product = (props) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleProductClick = (product) => {
+    dispatch(setSelectedProduct(product));
+    navigate(`/product-details`);
+  };
+
   return (
-    <div className="flex flex-col gap-2 max-w-80">
+    <div
+      className="flex flex-col gap-2 max-w-80 hover:cursor-pointer"
+      onMouseDown={() => handleProductClick(props.product)}
+    >
       <div className="w-auto h-56 rounded-xl overflow-hidden relative">
         <img
           className="w-full h-72 object-cover"

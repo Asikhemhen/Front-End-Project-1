@@ -3480,5 +3480,399 @@
       "specialOffer": "freeshipping",
       "delivery": 2
     }
+  ],
+  "reviews": [
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "date": "February 1, 2025",
+      "rating": 5,
+      "review": "This product exceeded my expectations! The quality is outstanding, and the delivery was super fast. I was a bit skeptical at first, but after using it for a week, I can confidently say it’s worth every penny. Will definitely be purchasing again. Highly recommended!"
+    },
+    {
+      "first_name": "Sarah",
+      "last_name": "Williams",
+      "date": "February 3, 2025",
+      "rating": 4,
+      "review": "I really liked this product! The material feels premium, and it functions just as described. My only complaint is that the packaging was slightly damaged during shipping, but the product itself was fine. I would definitely recommend it to others looking for quality at a good price."
+    },
+    {
+      "first_name": "Michael",
+      "last_name": "Smith",
+      "date": "February 5, 2025",
+      "rating": 2,
+      "review": "Not impressed with this purchase. The product did not match the description, and the quality was lower than expected. It works, but I don’t think it will last long. I wouldn’t buy it again unless improvements are made."
+    },
+    {
+      "first_name": "Emily",
+      "last_name": "Johnson",
+      "date": "February 7, 2025",
+      "rating": 3,
+      "review": "The product is decent for the price, but I expected better quality based on the description. It works fine, but I noticed some minor flaws that could have been improved. It’s not bad, but I probably wouldn’t buy it again. If the quality were slightly better, it would be perfect."
+    },
+    {
+      "first_name": "David",
+      "last_name": "Brown",
+      "date": "February 8, 2025",
+      "rating": 5,
+      "review": "Fantastic product! I was hesitant at first, but after reading some reviews, I decided to give it a try. I’m so glad I did! The craftsmanship is top-notch, and it looks even better in person. I’ve already recommended it to a few friends who are also planning to buy it."
+    },
+    {
+      "first_name": "Laura",
+      "last_name": "Anderson",
+      "date": "February 9, 2025",
+      "rating": 4,
+      "review": "Really good product overall. The design is sleek, and it’s very easy to use. The only reason I’m giving four stars instead of five is because I wish it had more color options. Other than that, I’m very happy with my purchase and would definitely buy from this store again."
+    },
+    {
+      "first_name": "James",
+      "last_name": "Miller",
+      "date": "February 10, 2025",
+      "rating": 5,
+      "review": "One of the best purchases I’ve made in a while! The product is exactly as described, and the quality is fantastic. Shipping was faster than expected, and the customer support team was very helpful when I had a question. If you’re on the fence about buying this, go for it!"
+    },
+    {
+      "first_name": "Sophia",
+      "last_name": "Clark",
+      "date": "February 11, 2025",
+      "rating": 1,
+      "review": "Terrible experience. The product arrived damaged, and customer service was not helpful. I requested a refund but still haven’t received it. I would not recommend this to anyone."
+    },
+    {
+      "first_name": "Daniel",
+      "last_name": "White",
+      "date": "February 12, 2025",
+      "rating": 5,
+      "review": "Wow! This product is amazing. The moment I unboxed it, I could tell it was high quality. It works flawlessly, and I’ve had no issues so far. It’s clear that a lot of thought went into the design and functionality. I highly recommend it to anyone looking for a reliable product."
+    },
+    {
+      "first_name": "Olivia",
+      "last_name": "Martinez",
+      "date": "February 13, 2025",
+      "rating": 3,
+      "review": "Overall, I’m happy with my purchase. The product is well-made and functions as expected. The only issue I had was with the delivery, which took longer than I had hoped. Other than that, everything was perfect. I will definitely be shopping from this store again!"
+    },
+    {
+      "first_name": "Nathan",
+      "last_name": "Green",
+      "date": "February 14, 2025",
+      "rating": 4,
+      "review": "The product quality is good, and it works as expected. However, I feel like it could be slightly better in terms of durability. Still, I am happy with my purchase and would recommend it."
+    },
+    {
+      "first_name": "Hannah",
+      "last_name": "Nelson",
+      "date": "February 15, 2025",
+      "rating": 5,
+      "review": "I bought this product as a gift, and the recipient absolutely loved it! It’s well-designed, easy to use, and worth every penny. Highly recommend this to anyone considering buying it."
+    },
+    {
+      "first_name": "Ethan",
+      "last_name": "Rodriguez",
+      "date": "February 16, 2025",
+      "rating": 2,
+      "review": "I expected more from this product. The build quality is lower than advertised, and it doesn’t work as smoothly as I had hoped. It’s usable, but I wouldn’t buy it again."
+    },
+    {
+      "first_name": "Grace",
+      "last_name": "Scott",
+      "date": "February 17, 2025",
+      "rating": 5,
+      "review": "This product is amazing! I have been using it daily, and it has not disappointed me at all. The features are exactly as described, and I love the sleek design."
+    },
+    {
+      "first_name": "Benjamin",
+      "last_name": "Taylor",
+      "date": "February 18, 2025",
+      "rating": 3,
+      "review": "It’s a decent product for the price, but I wouldn’t say it’s the best on the market. It works well, but I had a few minor issues with the setup."
+    },
+    {
+      "first_name": "Madison",
+      "last_name": "Perez",
+      "date": "February 19, 2025",
+      "rating": 4,
+      "review": "Pretty good product overall. I liked the design and functionality. It’s slightly expensive, but I think it’s worth it for the quality you get."
+    },
+    {
+      "first_name": "Alexander",
+      "last_name": "Baker",
+      "date": "February 20, 2025",
+      "rating": 5,
+      "review": "Incredible product! Works better than expected, and I have already ordered a second one for my friend. Would highly recommend!"
+    },
+    {
+      "first_name": "Isabella",
+      "last_name": "Lopez",
+      "date": "February 21, 2025",
+      "rating": 1,
+      "review": "Terrible quality. The product broke within a few days of use. I reached out for a refund, but the process has been slow and frustrating."
+    },
+    {
+      "first_name": "Liam",
+      "last_name": "Walker",
+      "date": "February 22, 2025",
+      "rating": 4,
+      "review": "The product is well-made and feels durable. It functions as expected, though I wish the instructions were clearer. Overall, a solid purchase, and I would recommend it to others."
+    },
+    {
+      "first_name": "Ava",
+      "last_name": "Harris",
+      "date": "February 23, 2025",
+      "rating": 5,
+      "review": "Absolutely love this! The quality is top-notch, and it looks even better in person. Customer service was also very responsive when I had a question. Great experience overall!"
+    },
+    {
+      "first_name": "Noah",
+      "last_name": "Carter",
+      "date": "February 24, 2025",
+      "rating": 3,
+      "review": "Decent product, but I expected a bit more based on the description. It works fine, but the build quality could be improved. I would consider buying again if an upgraded version is released."
+    },
+    {
+      "first_name": "Emma",
+      "last_name": "Mitchell",
+      "date": "February 25, 2025",
+      "rating": 5,
+      "review": "Fantastic product! I've been using it for a month now, and it's holding up great. It does exactly what it promises, and the design is sleek and modern. Highly recommended!"
+    },
+    {
+      "first_name": "Oliver",
+      "last_name": "Perez",
+      "date": "February 26, 2025",
+      "rating": 2,
+      "review": "Not satisfied with this purchase. The product arrived late, and the quality is not as good as I expected. It does work, but I doubt it will last long. Would not buy again."
+    },
+    {
+      "first_name": "Sophia",
+      "last_name": "Adams",
+      "date": "February 27, 2025",
+      "rating": 5,
+      "review": "Wow! This exceeded my expectations. It arrived quickly, and the quality is superb. It’s rare to find something that actually lives up to the hype, but this one does!"
+    },
+    {
+      "first_name": "Elijah",
+      "last_name": "Rodriguez",
+      "date": "February 28, 2025",
+      "rating": 3,
+      "review": "It’s okay, but I had higher expectations. It performs well, but there are a few minor flaws that could be improved. Decent for the price, but not the best option available."
+    },
+    {
+      "first_name": "Isabella",
+      "last_name": "Scott",
+      "date": "March 1, 2025",
+      "rating": 1,
+      "review": "Very disappointed. The product broke after just a few uses. I reached out to customer service for a refund, but I haven't received a response yet. I wouldn’t recommend this at all."
+    },
+    {
+      "first_name": "James",
+      "last_name": "Murphy",
+      "date": "March 2, 2025",
+      "rating": 4,
+      "review": "Overall, a great product! It does exactly what it’s supposed to, and the build quality is nice. I wish it came in more colors, but that’s a minor issue. Happy with my purchase!"
+    },
+    {
+      "first_name": "Mia",
+      "last_name": "Ramirez",
+      "date": "March 3, 2025",
+      "rating": 5,
+      "review": "Perfect! I’ve tried similar products before, but this one stands out. The materials used are of great quality, and it works flawlessly. Will be buying another one soon!"
+    },
+    {
+      "first_name": "William",
+      "last_name": "Gonzalez",
+      "date": "March 4, 2025",
+      "rating": 3,
+      "review": "The product is okay, but nothing special. It does what it’s supposed to, but I feel like it’s a bit overpriced. I might try a different brand next time."
+    },
+    {
+      "first_name": "Charlotte",
+      "last_name": "Torres",
+      "date": "March 5, 2025",
+      "rating": 5,
+      "review": "Amazing product! I’ve been using it daily, and it hasn’t failed me once. The craftsmanship is excellent, and it looks very stylish. Would definitely buy again!"
+    },
+    {
+      "first_name": "Henry",
+      "last_name": "Roberts",
+      "date": "March 6, 2025",
+      "rating": 4,
+      "review": "This product is a great buy! Works perfectly, and the quality is impressive. I had a slight issue with the delivery, but customer support resolved it quickly. Very happy overall!"
+    },
+    {
+      "first_name": "Amelia",
+      "last_name": "Lopez",
+      "date": "March 7, 2025",
+      "rating": 2,
+      "review": "The product looks nice, but it doesn’t perform as well as I had hoped. I was expecting better durability. Wouldn’t recommend it at this price point."
+    },
+    {
+      "first_name": "Lucas",
+      "last_name": "Evans",
+      "date": "March 8, 2025",
+      "rating": 5,
+      "review": "Absolutely love this! The design is elegant, and it works flawlessly. I’ve already recommended it to several friends. It’s well worth the price!"
+    },
+    {
+      "first_name": "Harper",
+      "last_name": "Washington",
+      "date": "March 9, 2025",
+      "rating": 4,
+      "review": "Pretty solid product overall. The features are great, and it’s very easy to use. I just wish it was a bit cheaper, but the quality is definitely worth the price."
+    },
+    {
+      "first_name": "Benjamin",
+      "last_name": "Hall",
+      "date": "March 10, 2025",
+      "rating": 5,
+      "review": "This is exactly what I needed! The functionality is great, and it feels sturdy. I had high expectations, and this product met all of them. Definitely a great purchase!"
+    },
+    {
+      "first_name": "Evelyn",
+      "last_name": "Young",
+      "date": "March 11, 2025",
+      "rating": 3,
+      "review": "The product is decent but not as good as I had hoped. It works fine, but I had a few minor issues setting it up. Overall, an okay experience."
+    },
+    {
+      "first_name": "Jack",
+      "last_name": "Allen",
+      "date": "March 12, 2025",
+      "rating": 5,
+      "review": "Perfect in every way! The build quality is excellent, and it functions perfectly. I’ve tested it extensively, and it works as described. Very satisfied with my purchase!"
+    },
+    {
+      "first_name": "Daniel",
+      "last_name": "King",
+      "date": "March 13, 2025",
+      "rating": 4,
+      "review": "Great product with a premium feel. The packaging was also neat, and the delivery was on time. Works as described, though I wish it had more customization options."
+    },
+    {
+      "first_name": "Grace",
+      "last_name": "Wright",
+      "date": "March 14, 2025",
+      "rating": 5,
+      "review": "I’m in love with this product! It’s sturdy, well-designed, and performs flawlessly. The price is just right for the quality it offers. Highly recommend!"
+    },
+    {
+      "first_name": "Matthew",
+      "last_name": "Green",
+      "date": "March 15, 2025",
+      "rating": 2,
+      "review": "The product looks great but didn't work as expected. I tried troubleshooting, but the performance was inconsistent. Maybe I received a defective unit."
+    },
+    {
+      "first_name": "Chloe",
+      "last_name": "Baker",
+      "date": "March 16, 2025",
+      "rating": 5,
+      "review": "I am beyond satisfied! This product exceeded my expectations in every way. The quality, functionality, and design are all spot-on!"
+    },
+    {
+      "first_name": "David",
+      "last_name": "Nelson",
+      "date": "March 17, 2025",
+      "rating": 3,
+      "review": "The product is okay but could be better. It works fine but feels a little flimsy. Not bad for the price, but I might explore other options next time."
+    },
+    {
+      "first_name": "Victoria",
+      "last_name": "Hill",
+      "date": "March 18, 2025",
+      "rating": 4,
+      "review": "Very good product overall. It does what it promises, and I haven't encountered any major issues. Would buy again and recommend to others!"
+    },
+    {
+      "first_name": "Joseph",
+      "last_name": "Adams",
+      "date": "March 19, 2025",
+      "rating": 1,
+      "review": "Terrible experience! The product arrived damaged, and customer service was unresponsive. I regret buying this and wouldn’t recommend it."
+    },
+    {
+      "first_name": "Samantha",
+      "last_name": "Lopez",
+      "date": "March 20, 2025",
+      "rating": 5,
+      "review": "This product is amazing! I have been using it for weeks, and it still performs like new. Definitely worth every penny."
+    },
+    {
+      "first_name": "Ethan",
+      "last_name": "Carter",
+      "date": "March 21, 2025",
+      "rating": 3,
+      "review": "The product is decent, but I had some trouble setting it up. It works fine once you get past the initial learning curve."
+    },
+    {
+      "first_name": "Zoey",
+      "last_name": "Mitchell",
+      "date": "March 22, 2025",
+      "rating": 5,
+      "review": "I was skeptical at first, but this product completely won me over! It's durable, stylish, and works perfectly. Will be recommending to friends!"
+    },
+    {
+      "first_name": "Mason",
+      "last_name": "Perez",
+      "date": "March 23, 2025",
+      "rating": 2,
+      "review": "Not as good as I expected. The product feels cheap, and I had issues getting it to work consistently. Probably wouldn't buy again."
+    },
+    {
+      "first_name": "Hannah",
+      "last_name": "Robinson",
+      "date": "March 24, 2025",
+      "rating": 5,
+      "review": "Wow! This is one of the best purchases I've made. The quality is outstanding, and it performs better than expected. Would definitely recommend!"
+    },
+    {
+      "first_name": "Logan",
+      "last_name": "Clark",
+      "date": "March 25, 2025",
+      "rating": 4,
+      "review": "This product is fantastic! It works well, looks stylish, and is very durable. The only reason I’m not giving 5 stars is the slightly high price."
+    },
+    {
+      "first_name": "Natalie",
+      "last_name": "Lewis",
+      "date": "March 26, 2025",
+      "rating": 1,
+      "review": "Extremely disappointed! The product stopped working after just a few uses. I tried contacting support, but I haven't received any response."
+    },
+    {
+      "first_name": "Alexander",
+      "last_name": "King",
+      "date": "March 27, 2025",
+      "rating": 5,
+      "review": "I love this product! It’s everything I was looking for and more. The quality is excellent, and it was worth every cent. Would buy again!"
+    },
+    {
+      "first_name": "Madison",
+      "last_name": "Hall",
+      "date": "March 28, 2025",
+      "rating": 4,
+      "review": "Very impressed with this purchase. The design is sleek, and it performs as advertised. A solid investment!"
+    },
+    {
+      "first_name": "Sebastian",
+      "last_name": "Torres",
+      "date": "March 29, 2025",
+      "rating": 2,
+      "review": "The product didn’t meet my expectations. The material feels cheap, and it doesn’t function as smoothly as I had hoped."
+    },
+    {
+      "first_name": "Emily",
+      "last_name": "Garcia",
+      "date": "March 30, 2025",
+      "rating": 5,
+      "review": "One of the best products I’ve purchased in a while! The attention to detail and functionality are fantastic. I would absolutely recommend this!"
+    },
+    {
+      "first_name": "Aiden",
+      "last_name": "Martinez",
+      "date": "March 31, 2025",
+      "rating": 3,
+      "review": "Decent quality, but I was expecting more based on the reviews. It works fine, but I think it could have been made with better materials."
+    }
   ]
 }

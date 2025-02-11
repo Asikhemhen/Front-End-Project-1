@@ -25,6 +25,7 @@ const RecommendedProducts = () => {
               sales={product.sales}
               shop={product.shop}
               discount={product.discount}
+              product={product}
             />
           ))}
         </div>

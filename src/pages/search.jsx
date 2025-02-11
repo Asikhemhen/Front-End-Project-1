@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import reset from "../assets/images/closeMenu.svg";
 import arrowDown from "../assets/images/arrowDown.svg";
 import data from "../data/data.json";
@@ -442,6 +442,7 @@ const Search = (props) => {
             <div className="min-h-screen grid  grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 pt-3">
               {currentItems.map((product) => (
                 <Product
+                  id={product.id}
                   key={product.id}
                   name={product.name}
                   image={require(`../assets/images${product.image}`)}
@@ -451,6 +452,7 @@ const Search = (props) => {
                   sales={product.sales}
                   shop={product.shop}
                   discount={product.discount}
+                  product={product}
                 />
               ))}
             </div>

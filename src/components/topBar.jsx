@@ -2,6 +2,7 @@ import ellipse from "../assets/images/ellipse.svg";
 import globe from "../assets/images/globe.svg";
 import dollar from "../assets/images/dollar.svg";
 import { Link, NavLink } from "react-router-dom";
+import { declare } from "../../node_modules/@reduxjs/toolkit/dist/query/react/index.d";
 
 const TopBar = () => {
   return (

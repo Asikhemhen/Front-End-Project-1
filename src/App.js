@@ -11,9 +11,15 @@ import Home from "./pages/home";
 import Search from "./pages/search";
 import Footer from "./components/footer";
 import NavBar from "./components/navBar";
+import ProductPage from "./pages/productPage";
 import Test from "./components/test";
+import { useSelector } from "react-redux";
+import { toggleTheme } from "./state/themeSlice";
 
 const App = () => {
+  //Get States From Redux
+  const theme = useSelector((state) => state.theme.mode);
+
   // State for dropdown
   const [dropDown, setDropDown] = useState(false);
   const [dropDownSelected, setDropDownSelected] = useState("All Categories");
@@ -55,6 +61,7 @@ const App = () => {
           toggleDropDown={toggleDropDown}
           dropDownSelected={dropDownSelected}
           handleDropDownItemClick={handleDropDownItemClick}
+          theme={theme}
         />
       )}
       <Routes>
@@ -65,6 +72,7 @@ const App = () => {
             <Search searchItem={searchItem} category={dropDownSelected} />
           }
         />
+        <Route path={`/product-details`} element={<ProductPage />} />
       </Routes>
 
       {showMenu && <Footer />}

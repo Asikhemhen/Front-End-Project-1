@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import React, { useState } from "react";
 
 const Pagination = (props) => {
   const [goToPage, setGoToPage] = useState("");
   const totalPages = Math.ceil(props.totalItems / props.itemsPerPage);
 
-  const handlePageChange = (page) => {
+  const handlePageChange = (page, scrollPosition) => {
     if (page >= 1 && page <= totalPages) {
       props.setCurrentPage(page);
-      window.scrollTo({ top: 0, behavior: "auto" }); // Scroll to top
+      if (scrollPosition === "") {
+        window.scrollTo({ top: 0, behavior: "auto" }); // Scroll to top
+      } else {
+        props.sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
@@ -37,7 +40,7 @@ const Pagination = (props) => {
 
   const renderPageNumbers = () => {
     const pageNumbers = [];
-    const maxButtons = 5; // Number of buttons to show around the current page
+    const maxButtons = 3; // Number of buttons to show around the current page
 
     let startPage = Math.max(props.currentPage - Math.floor(maxButtons / 2), 1);
     let endPage = Math.min(startPage + maxButtons - 1, totalPages);
@@ -50,7 +53,7 @@ const Pagination = (props) => {
       pageNumbers.push(
         <PageButtons
           key={i}
-          handleClick={() => handlePageChange(i)}
+          handleClick={() => handlePageChange(i, props.position)}
           pageNo={i}
           text={props.currentPage === i ? "text-white" : "text-indigo-950"}
           bg={props.currentPage === i ? "bg-indigo-950" : "bg-stone-200"}
@@ -63,7 +66,7 @@ const Pagination = (props) => {
       pageNumbers.unshift(
         <PageButtons
           key={1}
-          handleClick={() => handlePageChange(1)}
+          handleClick={() => handlePageChange(1, props.position)}
           pageNo={1}
           text={props.currentPage === 1 ? "text-white" : "text-indigo-950"}
           bg={props.currentPage === 1 ? "bg-indigo-950" : "bg-stone-200"}
@@ -76,7 +79,7 @@ const Pagination = (props) => {
       pageNumbers.push(
         <PageButtons
           key={totalPages}
-          handleClick={() => handlePageChange(totalPages)}
+          handleClick={() => handlePageChange(totalPages, props.position)}
           pageNo={totalPages}
           text={
             props.currentPage === totalPages ? "text-white" : "text-indigo-950"
@@ -93,15 +96,19 @@ const Pagination = (props) => {
 
   if (props.currentPage > totalPages) {
     //Adjust pages properly when screen size changes
-    handlePageChange(totalPages - 1);
+    handlePageChange(totalPages - 1, props.position);
   }
 
   return (
-    <div className="flex flex-col justify-center items-center gap-2 lg:gap-9 lg:flex-row mt-10">
+    <div
+      className={`flex flex-col items-center gap-2 lg:gap-9 lg:flex-row mt-10`}
+    >
       <div>
         <PageButtons
           key={"<"}
-          handleClick={() => handlePageChange(props.currentPage - 1)}
+          handleClick={() =>
+            handlePageChange(props.currentPage - 1, props.position)
+          }
           pageNo={"<"}
           text={
             props.currentPage === 1
@@ -112,7 +119,9 @@ const Pagination = (props) => {
         {renderPageNumbers()}
         <PageButtons
           key={">"}
-          handleClick={() => handlePageChange(props.currentPage + 1)}
+          handleClick={() =>
+            handlePageChange(props.currentPage + 1, props.position)
+          }
           pageNo={">"}
           text={
             props.currentPage === totalPages
@@ -121,7 +130,7 @@ const Pagination = (props) => {
           }
         />
       </div>
-      <div className="flex justify-center items-center gap-2 pt-1">
+      <div className="flex items-center gap-2 pt-1">
         <label>Go to page</label>
         <input
           type="text"
