@@ -1,4 +1,4 @@
-import heart from "../../assets/images/heart.svg";
+// import heart from "../../assets/images/heart.svg";
 import ellipse from "../../assets/images/ellipse.svg";
 import verify from "../../assets/images/verify.svg";
 import location from "../../assets/images/location.svg";

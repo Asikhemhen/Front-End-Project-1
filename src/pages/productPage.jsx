@@ -105,7 +105,7 @@ const ProductPage = () => {
             <div className="rounded-xl overflow-hidden">
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-full sm:h-[var(--custom-height)]"
               />
             </div>
@@ -116,37 +116,37 @@ const ProductPage = () => {
             >
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt=""
+                alt="image"
                 className="w-24 h-24 rounded-md"
               />
             </div>
