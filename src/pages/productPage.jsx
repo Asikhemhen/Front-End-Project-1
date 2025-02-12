@@ -13,9 +13,17 @@ import Pagination from "../components/pagination";
 import ProductDescription from "../components/productPage/productDescription";
 import MeetTheShop from "../components/productPage/meetTheShop";
 import Product from "../components/products";
+import { useDispatch } from "react-redux";
+import { incrementCount, addItem } from "../state/cartCountSlice";
 
 const ProductPage = () => {
+  const dispatch = useDispatch();
   const product = useSelector((state) => state.product.selectedProduct);
+
+  const handleClickCart = (item) => {
+    dispatch(incrementCount());
+    dispatch(addItem(item));
+  };
 
   const scrollHorizontalRef = useRef(null);
   const reviewRef = useRef(null);
@@ -193,7 +201,10 @@ const ProductPage = () => {
               <div className="w-8 h-8 px-3 bg-yellow-400 rounded-md"></div>
               <div className="w-8 h-8 px-3 bg-blue-600 rounded-md"></div>
             </div>
-            <button className="border border-indigo-800 bg-indigo-50 font-semibold text-sm rounded-md w-full h-12 mt-5">
+            <button
+              className="border border-indigo-800 bg-indigo-50 font-semibold text-sm rounded-md w-full h-12 mt-5"
+              onClick={() => handleClickCart(product)}
+            >
               Add to cart
             </button>
             <button className="border bg-indigo-800 border-indigo-800 text-white font-semibold text-sm rounded-md w-full h-12 mt-3">
@@ -374,6 +385,7 @@ const ProductPage = () => {
             (store, index) =>
               index === 0 && (
                 <MeetTheShop
+                  key={index}
                   name={store.name}
                   logo={require(`../assets/images${store.logo}`)}
                   caption={store.caption}

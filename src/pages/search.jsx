@@ -164,10 +164,6 @@ const Search = (props) => {
     );
   }
 
-  console.log(
-    filteredProducts.filter((product) => product.delivery === undefined)
-  );
-
   const handleChangeLocation = (event) => {
     setLocation(event.target.value);
   };

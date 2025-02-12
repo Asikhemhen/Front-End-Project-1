@@ -17,9 +17,14 @@ import dark from "../assets/images/darkMode.svg";
 import light from "../assets/images/lightMode.svg";
 import { useDispatch } from "react-redux";
 import { toggleTheme } from "../state/themeSlice";
+import { useSelector } from "react-redux";
+import SideCart from "./cart";
 
 function NavBar(props) {
   const dispatch = useDispatch();
+  const cartItemsCount = useSelector((state) => state.cartItems.count);
+
+  const [openCart, setOpenCart] = useState(false);
 
   // Refs for dropdowns
   const dropDownRef = useRef(null);
@@ -46,13 +51,13 @@ function NavBar(props) {
 
   return (
     <header>
-      <section class="bg-indigo-950 text-white w-full fixed top-0 z-10">
-        <div class="max-w-7xl mx-auto py-3 px-5 flex items-center justify-end sm:justify-between">
+      <section className="bg-indigo-950 text-white w-full fixed top-0 z-10">
+        <div className="max-w-7xl mx-auto py-3 px-5 flex items-center justify-end sm:justify-between">
           <NavLink className="hidden sm:flex text-sm" to="/open-a-store">
             Open a Giri store
           </NavLink>
           <div>
-            <nav class="space-x-5 text-sm flex" aria-label="main">
+            <nav className="space-x-5 text-sm flex" aria-label="main">
               <NavLink className="hover:opercity-90 flex" to="/nigeria">
                 <img src={globe} className="pr-1" alt="globe" />
                 Nigeria
@@ -76,7 +81,7 @@ function NavBar(props) {
           </div>
         </div>
       </section>
-      <section class="bg-white  text-white max-w-7xl mx-auto mt-12 py-3 px-5">
+      <section className="bg-white  text-white max-w-7xl mx-auto mt-12 py-3 px-5">
         <div className="grid grid-cols-2 grid-rows-2 sm:flex justify-between items-center">
           <div className="flex">
             <img
@@ -120,7 +125,7 @@ function NavBar(props) {
               <img src={search} className="h-6 self-center absolute left-48" />
             </div>
           </div>
-          <div className="flex justify-end items-center">
+          <div className="flex justify-end items-center relative">
             <NavLink
               className="max-lg:hidden self-center text-indigo-950 hover:opercity-90 mx-5"
               to="/Login"
@@ -131,7 +136,20 @@ function NavBar(props) {
               Sign Up
             </button>
             <img src={heart} className="mx-5" alt="heart" />
-            <img src={shoppingCart} className="" alt="shoppingCart" />
+            <img
+              src={shoppingCart}
+              className="hover:opacity-60"
+              alt="shoppingCart"
+              onMouseDown={() => setOpenCart((prev) => !prev)}
+            />
+            {cartItemsCount && (
+              <div
+                className="flex items-center justify-center bg-indigo-900 rounded-full h-4 w-4 text-[8px] absolute top-2 right-2"
+                onMouseDown={() => setOpenCart((prev) => !prev)}
+              >
+                {cartItemsCount}
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -175,6 +193,9 @@ function NavBar(props) {
           </div>
         </div>
       )}
+      <div>
+        <SideCart openCart={openCart} setOpenCart={setOpenCart} />
+      </div>
     </header>
   );
 }

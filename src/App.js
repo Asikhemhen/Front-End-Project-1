@@ -62,6 +62,7 @@ const App = () => {
           dropDownSelected={dropDownSelected}
           handleDropDownItemClick={handleDropDownItemClick}
           theme={theme}
+          // cartCount={1}
         />
       )}
       <Routes>

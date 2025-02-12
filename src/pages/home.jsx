@@ -11,6 +11,7 @@ import PopularShops from "../components/popularShops";
 import PopularProducts from "../components/popularProducts";
 import RecommendedProducts from "../components/recommendedProducts";
 import OutsideClicks from "../components/OutsideClicks";
+import SideCart from "../components/cart";
 
 const Home = () => {
   let [dropDown, setDropDown] = useState(false);
@@ -39,6 +40,8 @@ const Home = () => {
   return (
     <div>
       <section className="bg-indigo-100 flex max-lg:block">
+        <SideCart openCart={true} />
+
         <div className="flex basis-full max-w-2xl mx-auto py-3 px-5 max-lg:py-12 max-lg:max-w-5xl">
           <div className="bg-indigo-100 flex flex-col justify-center basis-full space-y-5">
             <div className="flex justify-end border border-white rounded-3xl h-10 max-w-80 relative">

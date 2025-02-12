@@ -15,19 +15,23 @@ const Pagination = (props) => {
     }
   };
 
-  const handleGoToPage = () => {
+  const handleGoToPage = (scrollPosition) => {
     const page = parseInt(goToPage, 10);
     if (!isNaN(page) && page >= 1 && page <= totalPages) {
       props.setCurrentPage(page);
       setGoToPage("");
-      window.scrollTo({ top: 0, behavior: "auto" }); // Scroll to top
+      if (scrollPosition === "") {
+        window.scrollTo({ top: 0, behavior: "auto" }); // Scroll to top
+      } else {
+        props.sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
     }
   };
 
   const PageButtons = (props) => {
     return (
       <button
-        key={props.key}
+        // key={props.key}
         disabled={props.currentPage === 1}
         onClick={props.handleClick}
         className={`h-9 w-9 ml-2 mt-2 ${props.text} ${props.bg}
@@ -141,7 +145,7 @@ const Pagination = (props) => {
         <label>{"/" + totalPages}</label>
         <button
           className="h-9 w-auto px-3 bg-indigo-950 text-white text-sm rounded-md hover:bg-indigo-900"
-          onClick={handleGoToPage}
+          onClick={() => handleGoToPage(props.scrollPosition)}
         >
           Enter
         </button>
