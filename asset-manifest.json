@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Front-End-Project-1/static/css/main.8a7ea547.css",
-    "main.js": "/Front-End-Project-1/static/js/main.6b4434a3.js",
+    "main.css": "/Front-End-Project-1/static/css/main.93104fb6.css",
+    "main.js": "/Front-End-Project-1/static/js/main.ebf04a52.js",
     "static/js/453.9c87d6d6.chunk.js": "/Front-End-Project-1/static/js/453.9c87d6d6.chunk.js",
     "static/media/hero.svg": "/Front-End-Project-1/static/media/hero.63b46b8f657ff0b6b83de2347e7b24d3.svg",
     "static/media/home&living.svg": "/Front-End-Project-1/static/media/home&living.c68482c0ab4d94818b93.svg",
-    "static/media/product.svg": "/Front-End-Project-1/static/media/product.b2c66c626b2a635fa97f.svg",
+    "static/media/product.svg": "/Front-End-Project-1/static/media/product.b2c66c626b2a635fa97f397ed10453bf.svg",
     "static/media/logo.svg": "/Front-End-Project-1/static/media/logo.36d22921ced36f8c8dce0c6129ab5d11.svg",
     "static/media/frame.svg": "/Front-End-Project-1/static/media/frame.bc3570d094beb929947a76b5401eb529.svg",
     "static/media/arts&collectibles.svg": "/Front-End-Project-1/static/media/arts&collectibles.bf773ebb8f4cceae167d.svg",
@@ -15,10 +15,12 @@
     "static/media/bags&purses.svg": "/Front-End-Project-1/static/media/bags&purses.5c54028d7f641cb11fe5.svg",
     "static/media/jewelries.svg": "/Front-End-Project-1/static/media/jewelries.09934d3769f3ee967565.svg",
     "static/media/shopLogo.svg": "/Front-End-Project-1/static/media/shopLogo.9d45ffddbb8b2878382a.svg",
+    "static/media/trash.svg": "/Front-End-Project-1/static/media/trash.0e361daf04ed07229aa009109411fa1d.svg",
     "static/media/instagram.svg": "/Front-End-Project-1/static/media/instagram.13dec7cc3f9d3395f8c9b74cf50b2987.svg",
     "static/media/globe.svg": "/Front-End-Project-1/static/media/globe.32e3f1b10dc0e7b3a85f11b4577148c1.svg",
     "static/media/verify.svg": "/Front-End-Project-1/static/media/verify.2e722d6a074057ab50ac433ee159bf53.svg",
     "static/media/dollar.svg": "/Front-End-Project-1/static/media/dollar.584c3b5daefdedb77800ce2fa886bbce.svg",
+    "static/media/sadFace.svg": "/Front-End-Project-1/static/media/sadFace.a0e893f3022e0e623d8c2c82575a0977.svg",
     "static/media/share.svg": "/Front-End-Project-1/static/media/share.c739e611fc23f469fe21562f466bac73.svg",
     "static/media/shop-icon.svg": "/Front-End-Project-1/static/media/shop-icon.9af46d5bf3b472d6e32d072f6b479cf1.svg",
     "static/media/message 2.svg": "/Front-End-Project-1/static/media/message 2.adf2534a0a393e2e7cae6ed79f3e487c.svg",
@@ -48,12 +50,12 @@
     "static/media/line.svg": "/Front-End-Project-1/static/media/line.ad4ebc4f9791366d2519.svg",
     "static/media/ellipse.svg": "/Front-End-Project-1/static/media/ellipse.7852938039544067efeb08ca574554bc.svg",
     "static/media/signUp.svg": "/Front-End-Project-1/static/media/signUp.31d6cfe0d16ae931b73c.svg",
-    "main.8a7ea547.css.map": "/Front-End-Project-1/static/css/main.8a7ea547.css.map",
-    "main.6b4434a3.js.map": "/Front-End-Project-1/static/js/main.6b4434a3.js.map",
+    "main.93104fb6.css.map": "/Front-End-Project-1/static/css/main.93104fb6.css.map",
+    "main.ebf04a52.js.map": "/Front-End-Project-1/static/js/main.ebf04a52.js.map",
     "453.9c87d6d6.chunk.js.map": "/Front-End-Project-1/static/js/453.9c87d6d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a7ea547.css",
-    "static/js/main.6b4434a3.js"
+    "static/css/main.93104fb6.css",
+    "static/js/main.ebf04a52.js"
   ]
 }
