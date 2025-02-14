@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Front-End-Project-1/static/css/main.d940e3b7.css",
-    "main.js": "/Front-End-Project-1/static/js/main.6e200b03.js",
+    "main.css": "/Front-End-Project-1/static/css/main.05cbe81e.css",
+    "main.js": "/Front-End-Project-1/static/js/main.f66f6d0a.js",
     "static/js/453.9c87d6d6.chunk.js": "/Front-End-Project-1/static/js/453.9c87d6d6.chunk.js",
     "static/media/hero.svg": "/Front-End-Project-1/static/media/hero.63b46b8f657ff0b6b83de2347e7b24d3.svg",
     "static/media/home&living.svg": "/Front-End-Project-1/static/media/home&living.c68482c0ab4d94818b93.svg",
@@ -50,12 +50,12 @@
     "static/media/line.svg": "/Front-End-Project-1/static/media/line.ad4ebc4f9791366d2519.svg",
     "static/media/ellipse.svg": "/Front-End-Project-1/static/media/ellipse.7852938039544067efeb08ca574554bc.svg",
     "static/media/signUp.svg": "/Front-End-Project-1/static/media/signUp.31d6cfe0d16ae931b73c.svg",
-    "main.d940e3b7.css.map": "/Front-End-Project-1/static/css/main.d940e3b7.css.map",
-    "main.6e200b03.js.map": "/Front-End-Project-1/static/js/main.6e200b03.js.map",
+    "main.05cbe81e.css.map": "/Front-End-Project-1/static/css/main.05cbe81e.css.map",
+    "main.f66f6d0a.js.map": "/Front-End-Project-1/static/js/main.f66f6d0a.js.map",
     "453.9c87d6d6.chunk.js.map": "/Front-End-Project-1/static/js/453.9c87d6d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d940e3b7.css",
-    "static/js/main.6e200b03.js"
+    "static/css/main.05cbe81e.css",
+    "static/js/main.f66f6d0a.js"
   ]
 }
