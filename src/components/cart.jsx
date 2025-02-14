@@ -15,6 +15,7 @@ import { setSelectedProduct } from "../state/productSlice";
 import { clearSelectedProduct } from "../state/productSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import CartUpdateButtons from "./cartUpdateButtons";
 
 const SideCart = (props) => {
   const navigate = useNavigate();
@@ -127,33 +128,17 @@ const SideCart = (props) => {
                           >
                             {product.name}
                           </p>
-                          <div className="flex gap-1">
-                            <button
-                              className={`h-6 w-6 rounded-md ${
-                                itemCounts[product.id] === 1
-                                  ? "bg-stone-400"
-                                  : "bg-indigo-950"
-                              } text-white text-sm`}
-                              onClick={() => handleDecrement(product)}
-                              disabled={itemCounts[product.id] === 1}
-                            >
-                              -
-                            </button>
-                            <input
-                              type="text"
-                              className="h-6 w-6 rounded-md text-center text-xs outline-none focus:ring-0 focus:ring-indigo-950"
-                              value={itemCounts[product.id]}
-                              readOnly
-                              min={1}
-                              //   onChange={() => }
-                            />
-                            <button
-                              className="h-6 w-6 rounded-md bg-indigo-950 text-white text-sm"
-                              onClick={() => handleIncrement(product)}
-                            >
-                              +
-                            </button>
-                          </div>
+                          <CartUpdateButtons
+                            height={6}
+                            width={6}
+                            pt={4}
+                            text={false}
+                            btnTextSize={"sm"}
+                            inputTextSize={"xs"}
+                            itemCounts={itemCounts[product.id]}
+                            handleIncrement={() => handleIncrement(product)}
+                            handleDecrement={() => handleDecrement(product)}
+                          />
                         </div>
                       </div>
                       <div className="col-span-2">

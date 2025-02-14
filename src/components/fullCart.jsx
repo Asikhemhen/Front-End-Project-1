@@ -63,44 +63,32 @@ const FullCart = (props) => {
     });
   }
 
-  const isMediumScreen = useMediaQuery({ query: "(max-width: 768px)" });
-  //const isSmallScreen = useMediaQuery({ query: "(max-width: 640px)" });
-
   return (
     // <div className="grid grid-cols-1 h-auto md:grid-cols-10 gap-3 max-w-7xl mx-auto px-5 py-5 pb-10">
-    <div className={`${cartItemsCount === 0 ? "h-screen" : "h-auto"}`}>
+    <div className={`${cartItemsCount === 0 ? "h-screen" : "h-screen"}`}>
       {cartItemsCount > 0 ? (
         <div className="grid grid-cols-1 h-auto md:grid-cols-10 gap-3 max-w-7xl mx-auto px-5 pt-5 pb-10">
           <div className="md:col-span-7 flex flex-col gap-5 text-sm bg-stone-100 p-4 rounded-md">
-            {!isMediumScreen && (
-              <div className="grid grid-cols-10 border-b pb-4 pt-1">
-                <div className="col-span-5 grid grid-cols-11">
-                  <p className="text-stone-600 font-medium text-md">Product</p>
+            <div className="max-md:hidden grid grid-cols-10 border-b pb-4 pt-1">
+              <div className="col-span-5 grid grid-cols-11">
+                <p className="text-stone-600 font-medium text-md">Product</p>
+              </div>
+              <div className="col-span-5 flex items-center md:grid md:grid-cols-8 gap-2 justify-self-end">
+                <div className="col-span-2">
+                  <p className="text-stone-600 font-medium text-md">Price</p>
                 </div>
-                <div className="col-span-5 flex items-center md:grid md:grid-cols-8 gap-2 justify-self-end">
-                  {!isMediumScreen && (
-                    <div className="col-span-2">
-                      <p className="text-stone-600 font-medium text-md">
-                        Price
-                      </p>
-                    </div>
-                  )}
-                  <div className="col-span-3 justify-self-start">
-                    <p className="text-stone-600 font-medium text-md">
-                      Quantity
-                    </p>
-                  </div>
-                  <div className="col-span-2">
-                    <p className="text-stone-600 font-medium text-md">
-                      Subtotal
-                    </p>
-                  </div>
-                  <div className="col-span-1">
-                    <p className="text-stone-600 font-medium text-md"></p>
-                  </div>
+                <div className="col-span-3 justify-self-start">
+                  <p className="text-stone-600 font-medium text-md">Quantity</p>
+                </div>
+                <div className="col-span-2">
+                  <p className="text-stone-600 font-medium text-md">Subtotal</p>
+                </div>
+                <div className="col-span-1">
+                  <p className="text-stone-600 font-medium text-md"></p>
                 </div>
               </div>
-            )}
+            </div>
+
             {cartItems.map((item, index) => {
               if (itemIdSet.has(item.id)) {
                 return null; // Skip duplicate display
@@ -121,18 +109,16 @@ const FullCart = (props) => {
                     </div>
                   </div>
                   <div className="col-span-5 flex items-center md:grid md:grid-cols-8 gap-2 justify-self-end">
-                    {!isMediumScreen && (
-                      <div className="col-span-2  justify-self-start">
-                        <div className="flex items-center pt-4">
-                          <p className="text-xs font-medium">$</p>
-                          <p>
-                            {formatNumber(
-                              item.price - item.price * item.discount * 0.01
-                            )}
-                          </p>
-                        </div>
+                    <div className="col-span-2 max-md:hidden justify-self-start">
+                      <div className="flex items-center pt-4">
+                        <p className="text-xs font-medium">$</p>
+                        <p>
+                          {formatNumber(
+                            item.price - item.price * item.discount * 0.01
+                          )}
+                        </p>
                       </div>
-                    )}
+                    </div>
                     <div className="col-span-3">
                       <CartUpdateButtons
                         height={6}

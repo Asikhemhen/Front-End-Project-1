@@ -252,8 +252,8 @@ const ProductPage = () => {
                 width={11}
                 pt={4}
                 text={true}
-                btnTextSize={"lg"}
-                inputTextSize={"md"}
+                // btnTextSize={"lg"}
+                // inputTextSize={"md"}
                 itemCounts={itemCounts[product.id]}
                 handleIncrement={() => handleIncrement(product)}
                 handleDecrement={() => handleDecrement(product)}
