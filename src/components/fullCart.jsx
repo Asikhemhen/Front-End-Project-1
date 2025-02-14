@@ -9,7 +9,6 @@ import {
 } from "../state/cartCountSlice";
 import { clearSelectedProduct } from "../state/productSlice";
 import emptyCart from "../assets/images/sadFace.svg";
-import { useState } from "react";
 import CartUpdateButtons from "./cartUpdateButtons";
 import { useMediaQuery } from "react-responsive";
 
@@ -57,13 +56,6 @@ const FullCart = (props) => {
     dispatch(resetCount(itemsLeft.length));
   };
 
-  //Quantity Input field
-  const [quantity, setQuantity] = useState(1);
-  const handleChange = (event) => {
-    const value = event.target.value;
-    setQuantity(value);
-  };
-
   function formatNumber(num) {
     return num.toLocaleString(undefined, {
       minimumFractionDigits: 2,
@@ -72,7 +64,7 @@ const FullCart = (props) => {
   }
 
   const isMediumScreen = useMediaQuery({ query: "(max-width: 768px)" });
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 640px)" });
+  //const isSmallScreen = useMediaQuery({ query: "(max-width: 640px)" });
 
   return (
     // <div className="grid grid-cols-1 h-auto md:grid-cols-10 gap-3 max-w-7xl mx-auto px-5 py-5 pb-10">

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import ellipse from "../assets/images/ellipse.svg";
 import globe from "../assets/images/globe.svg";
 import dollar from "../assets/images/dollar.svg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import heart from "../assets/images/heart.svg";
 import shoppingCart from "../assets/images/shoppingCart.svg";
@@ -135,7 +135,11 @@ function NavBar(props) {
                 value={props.value}
                 onChange={props.handleChange}
               />
-              <img src={search} className="h-6 self-center absolute left-48" />
+              <img
+                src={search}
+                className="h-6 self-center absolute left-48"
+                alt="search icon"
+              />
             </div>
           </div>
           <div className="flex justify-end items-center relative">
