@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-// import { useNavigate } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import ellipse from "../assets/images/ellipse.svg";
 import globe from "../assets/images/globe.svg";
 import dollar from "../assets/images/dollar.svg";
@@ -35,19 +35,32 @@ function NavBar(props) {
   //State for Menu
   let [menuState, setMenuState] = useState(false);
   let menuRef = useRef(null);
+  let cartRef = useRef(null);
+
+  //Hide the menu bar and side cart when a new page is opened
+  const location = useLocation();
+  useEffect(() => {
+    setMenuState(false);
+    setOpenCart(false);
+  }, [location.pathname]);
 
   //Toggle Munu
   const toggleMenu = () => {
     setMenuState((prevState) => !prevState);
   };
 
-  if (menuState) {
+  //Disable page scroll when menu or side cart opens
+  if (menuState || openCart) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
   }
 
+  //Hide the menu bar on outside click
   OutsideClicks(menuRef, () => setMenuState(false));
+
+  //Hide the side cart on outside click
+  OutsideClicks(cartRef, () => setOpenCart(false));
 
   return (
     <header>
@@ -140,12 +153,13 @@ function NavBar(props) {
               src={shoppingCart}
               className="hover:opacity-60"
               alt="shoppingCart"
-              onMouseDown={() => setOpenCart((prev) => !prev)}
+              onClick={() => setOpenCart((prev) => !prev)}
+              ref={cartRef}
             />
             {cartItemsCount && (
               <div
                 className="flex items-center justify-center bg-indigo-900 rounded-full h-4 w-4 text-[8px] absolute top-2 right-2"
-                onMouseDown={() => setOpenCart((prev) => !prev)}
+                onClick={() => setOpenCart((prev) => !prev)}
               >
                 {cartItemsCount}
               </div>
@@ -194,7 +208,11 @@ function NavBar(props) {
         </div>
       )}
       <div>
-        <SideCart openCart={openCart} setOpenCart={setOpenCart} />
+        <SideCart
+          cartRef={cartRef}
+          openCart={openCart}
+          setOpenCart={setOpenCart}
+        />
       </div>
     </header>
   );

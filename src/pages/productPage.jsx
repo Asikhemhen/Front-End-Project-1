@@ -14,7 +14,14 @@ import ProductDescription from "../components/productPage/productDescription";
 import MeetTheShop from "../components/productPage/meetTheShop";
 import Product from "../components/products";
 import { useDispatch } from "react-redux";
-import { incrementCount, addItem } from "../state/cartCountSlice";
+import {
+  incrementCount,
+  addItem,
+  decrementCount,
+  removeItem,
+} from "../state/cartCountSlice";
+import { clearSelectedProduct } from "../state/productSlice";
+import CartUpdateButtons from "../components/cartUpdateButtons";
 
 const ProductPage = () => {
   const dispatch = useDispatch();
@@ -96,6 +103,37 @@ const ProductPage = () => {
   const indexOFFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredReviews.slice(indexOFFirstItem, indexOfLastItem);
 
+  //Count occurrences of each product in the cart
+  const cartItems = useSelector((state) => state.cartItems.items);
+
+  const itemCounts = cartItems.reduce((allItems, eachItems) => {
+    allItems[eachItems.id] = (allItems[eachItems.id] || 0) + 1;
+    return allItems;
+  }, {});
+
+  const handleIncrement = (product) => {
+    dispatch(addItem(product));
+    dispatch(incrementCount());
+  };
+
+  const handleDecrement = (product) => {
+    const allItems = [...cartItems];
+    const indexToRemove = allItems.findIndex((item) => item.id === product.id);
+
+    console.log("Before:", allItems);
+    console.log(indexToRemove);
+
+    if (indexToRemove !== -1) {
+      allItems.splice(indexToRemove, 1);
+    }
+
+    dispatch(removeItem(allItems));
+    dispatch(decrementCount());
+    if (itemCounts === 0) {
+      console.log("clear", dispatch(clearSelectedProduct()));
+    }
+  };
+
   return (
     <div className="flex flex-col">
       <div className="max-w-7xl mx-auto py-3 px-5 mt-5">
@@ -105,7 +143,7 @@ const ProductPage = () => {
             <div className="rounded-xl overflow-hidden">
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-full sm:h-[var(--custom-height)]"
               />
             </div>
@@ -116,37 +154,37 @@ const ProductPage = () => {
             >
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
               <img
                 src={require(`../assets/images${product.image}`)}
-                alt="image"
+                alt={product.name}
                 className="w-24 h-24 rounded-md"
               />
             </div>
@@ -201,12 +239,26 @@ const ProductPage = () => {
               <div className="w-8 h-8 px-3 bg-yellow-400 rounded-md"></div>
               <div className="w-8 h-8 px-3 bg-blue-600 rounded-md"></div>
             </div>
-            <button
-              className="border border-indigo-800 bg-indigo-50 font-semibold text-sm rounded-md w-full h-12 mt-5"
-              onClick={() => handleClickCart(product)}
-            >
-              Add to cart
-            </button>
+            {!itemCounts[product.id] ? (
+              <button
+                className="border border-indigo-800 bg-indigo-50 font-semibold text-sm rounded-md w-full h-12 mt-5"
+                onClick={() => handleClickCart(product)}
+              >
+                Add to cart
+              </button>
+            ) : (
+              <CartUpdateButtons
+                height={11}
+                width={11}
+                pt={4}
+                text={true}
+                btnTextSize={"lg"}
+                inputTextSize={"md"}
+                itemCounts={itemCounts[product.id]}
+                handleIncrement={() => handleIncrement(product)}
+                handleDecrement={() => handleDecrement(product)}
+              />
+            )}
             <button className="border bg-indigo-800 border-indigo-800 text-white font-semibold text-sm rounded-md w-full h-12 mt-3">
               Buy now
             </button>

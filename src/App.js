@@ -15,6 +15,7 @@ import ProductPage from "./pages/productPage";
 import Test from "./components/test";
 import { useSelector } from "react-redux";
 import { toggleTheme } from "./state/themeSlice";
+import FullCart from "./components/fullCart";
 
 const App = () => {
   //Get States From Redux
@@ -74,6 +75,7 @@ const App = () => {
           }
         />
         <Route path={`/product-details`} element={<ProductPage />} />
+        <Route path={`/full-cart`} element={<FullCart />} />
       </Routes>
 
       {showMenu && <Footer />}

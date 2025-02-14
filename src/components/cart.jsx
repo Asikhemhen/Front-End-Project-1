@@ -46,8 +46,6 @@ const SideCart = (props) => {
       allItems.splice(indexToRemove, 1);
     }
 
-    console.log("After:", allItems);
-
     dispatch(removeItem(allItems));
     dispatch(decrementCount());
     if (itemCounts === 0) {
@@ -62,14 +60,26 @@ const SideCart = (props) => {
     dispatch(resetCount(itemsLeft.length));
   };
 
+  const handleGoToFullCart = () => {
+    navigate(`/full-cart`);
+    props.setOpenCart(false);
+  };
+
   //Count occurrences of each product in the cart
   const itemCounts = cartItems.reduce((allItems, eachItems) => {
     allItems[eachItems.id] = (allItems[eachItems.id] || 0) + 1;
     return allItems;
   }, {});
 
+  function formatNumber(num) {
+    return num.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+  }
+
   return (
-    <div className="h-full w-96">
+    <div className="h-full w-96" ref={props.cartRef}>
       {props.openCart && (
         <div className="flex justify-between bg-white h-full w-96 flex-col text-indigo-950 p-5 fixed top-0 right-0 z-20">
           <div className="flex flex-col overflow-x-auto scrollbar-hide mt-8">
@@ -119,16 +129,22 @@ const SideCart = (props) => {
                           </p>
                           <div className="flex gap-1">
                             <button
-                              className="h-6 w-6 rounded-md bg-indigo-950 text-white text-sm"
+                              className={`h-6 w-6 rounded-md ${
+                                itemCounts[product.id] === 1
+                                  ? "bg-stone-400"
+                                  : "bg-indigo-950"
+                              } text-white text-sm`}
                               onClick={() => handleDecrement(product)}
+                              disabled={itemCounts[product.id] === 1}
                             >
                               -
                             </button>
                             <input
                               type="text"
-                              className="h-6 w-6 rounded-md bg-stone-200 text-center text-xs outline-none focus:ring-1 focus:ring-indigo-950"
+                              className="h-6 w-6 rounded-md text-center text-xs outline-none focus:ring-0 focus:ring-indigo-950"
                               value={itemCounts[product.id]}
                               readOnly
+                              min={1}
                               //   onChange={() => }
                             />
                             <button
@@ -142,13 +158,14 @@ const SideCart = (props) => {
                       </div>
                       <div className="col-span-2">
                         <div className="flex flex-col justify-between h-full items-end">
-                          <p className="text-xs font-semibold">
-                            $
-                            {(
-                              product.price -
-                              product.price * product.discount * 0.01
-                            ).toFixed(2)}
-                          </p>
+                          <div className="flex items-center">
+                            <p className="text-xs font-semibold">
+                              {(
+                                product.price -
+                                product.price * product.discount * 0.01
+                              ).toFixed(2)}
+                            </p>
+                          </div>
                           <div
                             className="flex justify-center items-center w-10 h-10 rounded-md hover:bg-indigo-50"
                             onMouseDown={() => handleDeleteItem(product.id)}
@@ -180,18 +197,17 @@ const SideCart = (props) => {
             <div className="flex flex-col py-3 border-t border-b">
               <div className="flex justify-between items-center text.md">
                 <p className="text-stone-600 font-medium">Subtotal:</p>
-
                 <div className="flex items-center justify-end">
                   <p className="text-xs font-medium">$</p>
                   <p>
-                    {cartItems
-                      .reduce(
+                    {formatNumber(
+                      cartItems.reduce(
                         (sum, price) =>
                           (sum +=
                             price.price - price.price * price.discount * 0.01),
                         0
                       )
-                      .toFixed(2)}
+                    )}
                   </p>
                 </div>
               </div>
@@ -205,6 +221,8 @@ const SideCart = (props) => {
                   ? "border-indigo-950 bg-white font-semibold"
                   : "border-stone-200 bg-stone-200 text-stone-600 font-semibold"
               } text-sm h-10 mt-2`}
+              disabled={cartItemsCount === 0}
+              onClick={handleGoToFullCart}
             >
               View full cart
             </button>
