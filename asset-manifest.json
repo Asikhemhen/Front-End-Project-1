@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Front-End-Project-1/static/css/main.318ca8fe.css",
-    "main.js": "/Front-End-Project-1/static/js/main.90409671.js",
+    "main.css": "/Front-End-Project-1/static/css/main.63a98913.css",
+    "main.js": "/Front-End-Project-1/static/js/main.4693a5f8.js",
     "static/js/453.9c87d6d6.chunk.js": "/Front-End-Project-1/static/js/453.9c87d6d6.chunk.js",
     "static/media/hero.svg": "/Front-End-Project-1/static/media/hero.63b46b8f657ff0b6b83de2347e7b24d3.svg",
     "static/media/home&living.svg": "/Front-End-Project-1/static/media/home&living.c68482c0ab4d94818b93.svg",
@@ -19,6 +19,7 @@
     "static/media/instagram.svg": "/Front-End-Project-1/static/media/instagram.13dec7cc3f9d3395f8c9b74cf50b2987.svg",
     "static/media/globe.svg": "/Front-End-Project-1/static/media/globe.32e3f1b10dc0e7b3a85f11b4577148c1.svg",
     "static/media/verify.svg": "/Front-End-Project-1/static/media/verify.2e722d6a074057ab50ac433ee159bf53.svg",
+    "static/media/lock.svg": "/Front-End-Project-1/static/media/lock.f5a77ea653f3a6df92f58016c4fd1c2a.svg",
     "static/media/dollar.svg": "/Front-End-Project-1/static/media/dollar.584c3b5daefdedb77800ce2fa886bbce.svg",
     "static/media/sadFace.svg": "/Front-End-Project-1/static/media/sadFace.a0e893f3022e0e623d8c2c82575a0977.svg",
     "static/media/share.svg": "/Front-End-Project-1/static/media/share.c739e611fc23f469fe21562f466bac73.svg",
@@ -51,12 +52,12 @@
     "static/media/line.svg": "/Front-End-Project-1/static/media/line.ad4ebc4f9791366d2519.svg",
     "static/media/ellipse.svg": "/Front-End-Project-1/static/media/ellipse.7852938039544067efeb08ca574554bc.svg",
     "static/media/signUp.svg": "/Front-End-Project-1/static/media/signUp.31d6cfe0d16ae931b73c.svg",
-    "main.318ca8fe.css.map": "/Front-End-Project-1/static/css/main.318ca8fe.css.map",
-    "main.90409671.js.map": "/Front-End-Project-1/static/js/main.90409671.js.map",
+    "main.63a98913.css.map": "/Front-End-Project-1/static/css/main.63a98913.css.map",
+    "main.4693a5f8.js.map": "/Front-End-Project-1/static/js/main.4693a5f8.js.map",
     "453.9c87d6d6.chunk.js.map": "/Front-End-Project-1/static/js/453.9c87d6d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.318ca8fe.css",
-    "static/js/main.90409671.js"
+    "static/css/main.63a98913.css",
+    "static/js/main.4693a5f8.js"
   ]
 }
