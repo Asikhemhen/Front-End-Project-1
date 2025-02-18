@@ -19,8 +19,10 @@ import CartUpdateButtons from "./cartUpdateButtons";
 
 const SideCart = (props) => {
   const navigate = useNavigate();
+
   const handleProductClick = (product) => {
     dispatch(setSelectedProduct(product));
+    props.setOpenCart(false);
     navigate(`/product-details`);
   };
 
@@ -115,15 +117,15 @@ const SideCart = (props) => {
                       <div className="col-span-3">
                         <img
                           src={item}
-                          alt=""
-                          className="rounded-lg h-full"
+                          alt={item.name}
+                          className="rounded-lg h-full hover:cursor-pointer"
                           onMouseDown={() => handleProductClick(product)}
                         />
                       </div>
                       <div className="col-span-5 px-2">
                         <div className="flex flex-col justify-between h-full">
                           <p
-                            className="text-xs font-semibold"
+                            className="text-xs font-semibold  hover:cursor-pointer  hover:text-indigo-800"
                             onMouseDown={() => handleProductClick(product)}
                           >
                             {product.name}
@@ -133,8 +135,8 @@ const SideCart = (props) => {
                             width={6}
                             pt={4}
                             text={false}
-                            btnTextSize={"sm"}
-                            inputTextSize={"xs"}
+                            btnTextSize={12}
+                            inputTextSize={12}
                             itemCounts={itemCounts[product.id]}
                             handleIncrement={() => handleIncrement(product)}
                             handleDecrement={() => handleDecrement(product)}
@@ -218,8 +220,9 @@ const SideCart = (props) => {
                   : "border-stone-200 bg-stone-200 text-stone-600 font-semibold"
               } text-sm h-10`}
               disabled={cartItemsCount === 0}
+              onClick={() => navigate(`/checkout-shipping`)}
             >
-              Check out
+              Checkout
             </button>
           </div>
         </div>

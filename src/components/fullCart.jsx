@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import {
@@ -7,13 +8,16 @@ import {
   addItem,
   removeItem,
 } from "../state/cartCountSlice";
-import { clearSelectedProduct } from "../state/productSlice";
+import {
+  clearSelectedProduct,
+  setSelectedProduct,
+} from "../state/productSlice";
 import emptyCart from "../assets/images/sadFace.svg";
 import CartUpdateButtons from "./cartUpdateButtons";
-import { useMediaQuery } from "react-responsive";
 
 const FullCart = (props) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const cartItemsCount = useSelector((state) => state.cartItems.count);
   const cartItems = useSelector((state) => state.cartItems.items);
@@ -26,6 +30,11 @@ const FullCart = (props) => {
     return allItems;
   }, {});
 
+  const handleProductClick = (product) => {
+    dispatch(setSelectedProduct(product));
+    navigate(`/product-details`);
+  };
+
   const handleIncrement = (product) => {
     dispatch(addItem(product));
     dispatch(incrementCount());
@@ -34,9 +43,6 @@ const FullCart = (props) => {
   const handleDecrement = (product) => {
     const allItems = [...cartItems];
     const indexToRemove = allItems.findIndex((item) => item.id === product.id);
-
-    console.log("Before:", allItems);
-    console.log(indexToRemove);
 
     if (indexToRemove !== -1) {
       allItems.splice(indexToRemove, 1);
@@ -65,7 +71,7 @@ const FullCart = (props) => {
 
   return (
     // <div className="grid grid-cols-1 h-auto md:grid-cols-10 gap-3 max-w-7xl mx-auto px-5 py-5 pb-10">
-    <div className={`${cartItemsCount === 0 ? "h-screen" : "h-screen"}`}>
+    <div className="h-full">
       {cartItemsCount > 0 ? (
         <div className="grid grid-cols-1 h-auto md:grid-cols-10 gap-3 max-w-7xl mx-auto px-5 pt-5 pb-10">
           <div className="md:col-span-7 flex flex-col gap-5 text-sm bg-stone-100 p-4 rounded-md">
@@ -103,9 +109,15 @@ const FullCart = (props) => {
                       <img
                         src={require(`../assets/images${item.image}`)}
                         alt={item.name}
-                        className="w-20 h-20 rounded-lg"
+                        className="w-20 h-20 rounded-lg hover:cursor-pointer"
+                        onClick={() => handleProductClick(item)}
                       />
-                      <p className="mt-2">{item.name}</p>
+                      <p
+                        className="mt-2 hover:text-indigo-800 hover:cursor-pointer"
+                        onClick={() => handleProductClick(item)}
+                      >
+                        {item.name}
+                      </p>
                     </div>
                   </div>
                   <div className="col-span-5 flex items-center md:grid md:grid-cols-8 gap-2 justify-self-end">
@@ -145,7 +157,7 @@ const FullCart = (props) => {
                     </div>
                     <div className="col-span-1">
                       <div
-                        className="flex justify-center w-6 h-6 bg-red-700 hover:cursor-pointer hover:bg-red-600 rounded-md items-center text-md text-white font-medium mt-4"
+                        className="flex justify-center w-6 h-6 bg-indigo-100 hover:cursor-pointer hover:bg-indigo-300 rounded-md items-center text-md text-black font-medium mt-4"
                         onMouseDown={() => handleDeleteItem(item.id)}
                       >
                         x
@@ -189,7 +201,10 @@ const FullCart = (props) => {
                   Enter
                 </button>
               </div>
-              <button className="h-9 w-full bg-indigo-950 text-white font-medium text-xs rounded-lg mb-2">
+              <button
+                className="h-9 w-full bg-indigo-950 text-white font-medium text-xs rounded-lg mb-2"
+                onClick={() => navigate(`/checkout-shipping`)}
+              >
                 Proceed to checkout
               </button>
             </div>

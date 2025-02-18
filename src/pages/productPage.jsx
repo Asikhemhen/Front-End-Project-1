@@ -248,12 +248,12 @@ const ProductPage = () => {
               </button>
             ) : (
               <CartUpdateButtons
-                height={11}
-                width={11}
+                height={10}
+                width={10}
                 pt={4}
                 text={true}
-                // btnTextSize={"lg"}
-                // inputTextSize={"md"}
+                btnTextSize={16}
+                inputTextSize={14}
                 itemCounts={itemCounts[product.id]}
                 handleIncrement={() => handleIncrement(product)}
                 handleDecrement={() => handleDecrement(product)}

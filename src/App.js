@@ -16,6 +16,8 @@ import Test from "./components/test";
 import { useSelector } from "react-redux";
 import { toggleTheme } from "./state/themeSlice";
 import FullCart from "./components/fullCart";
+import CheckOutShipping from "./pages/checkoutPage";
+import PaymentPage from "./pages/paymentPage";
 
 const App = () => {
   //Get States From Redux
@@ -76,6 +78,8 @@ const App = () => {
         />
         <Route path={`/product-details`} element={<ProductPage />} />
         <Route path={`/full-cart`} element={<FullCart />} />
+        <Route path={`/checkout-shipping`} element={<CheckOutShipping />} />
+        <Route path={`checkout-payment`} element={<PaymentPage />} />
       </Routes>
 
       {showMenu && <Footer />}

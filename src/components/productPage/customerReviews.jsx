@@ -5,12 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CustomerReviews = (props) => {
   const percentRating = (rating) => {
-    const percent = rating / props.totalReviews;
-    const barWidth = (percent * 128).toFixed(0); //128 is the total width of the rating bar
-
-    // console.log(rating, percent, barWidth);
-
-    return `w-[${barWidth}px]`;
+    if (props.totalReviews === 0) return { width: "0px" }; // Avoid division by zero
+    const percent = (rating / props.totalReviews) * 128; // 128 is the total width
+    return { width: `${percent.toFixed(0)}px` };
   };
 
   //   console.log(percentRating(props.fiveStar));
@@ -37,9 +34,8 @@ const CustomerReviews = (props) => {
             <FontAwesomeIcon icon={faStar} className="text-yellow-500 w-2.5" />
             <div className="w-32 h-1.5 rounded-md bg-stone-300">
               <div
-                className={`${percentRating(
-                  props.fiveStar
-                )} h-1.5 rounded-md bg-yellow-500`}
+                style={percentRating(props.fiveStar)}
+                className={`h-1.5 rounded-md bg-yellow-500`}
               ></div>
             </div>
             <p className="text-[10px]">{props.fiveStar}</p>
@@ -50,9 +46,8 @@ const CustomerReviews = (props) => {
             <FontAwesomeIcon icon={faStar} className="text-yellow-500 w-2.5" />
             <div className="w-32 h-1.5 rounded-md bg-stone-300">
               <div
-                className={`${percentRating(
-                  props.fourStar
-                )} h-1.5 rounded-md bg-yellow-500`}
+                style={percentRating(props.fourStar)}
+                className={`h-1.5 rounded-md bg-yellow-500`}
               ></div>
             </div>
             <p className="text-[10px]">{props.fourStar}</p>
@@ -63,9 +58,8 @@ const CustomerReviews = (props) => {
             <FontAwesomeIcon icon={faStar} className="text-yellow-500 w-2.5" />
             <div className="w-32 h-1.5 rounded-md bg-stone-300">
               <div
-                className={`${percentRating(
-                  props.threeStar
-                )} h-1.5 rounded-md bg-yellow-500`}
+                style={percentRating(props.threeStar)}
+                className={`h-1.5 rounded-md bg-yellow-500`}
               ></div>
             </div>
             <p className="text-[10px]">{props.threeStar}</p>
@@ -76,9 +70,8 @@ const CustomerReviews = (props) => {
             <FontAwesomeIcon icon={faStar} className="text-yellow-500 w-2.5" />
             <div className="w-32 h-1.5 rounded-md bg-stone-300">
               <div
-                className={`${percentRating(
-                  props.twoStar
-                )} h-1.5 rounded-md bg-yellow-500`}
+                style={percentRating(props.twoStar)}
+                className={`h-1.5 rounded-md bg-yellow-500`}
               ></div>
             </div>
             <p className="text-[10px]">{props.twoStar}</p>
@@ -89,9 +82,8 @@ const CustomerReviews = (props) => {
             <FontAwesomeIcon icon={faStar} className="text-yellow-500 w-2.5" />
             <div className="w-32 h-1.5 rounded-md bg-stone-300">
               <div
-                className={`${percentRating(
-                  props.oneStar
-                )} h-1.5 rounded-md bg-yellow-500`}
+                style={percentRating(props.oneStar)}
+                className={`h-1.5 rounded-md bg-yellow-500`}
               ></div>
             </div>
             <p className="text-[10px]">{props.oneStar}</p>
