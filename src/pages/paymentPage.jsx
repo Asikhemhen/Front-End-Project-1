@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { setSelectedProduct } from "../state/productSlice";
+import lock from "../assets/images/lock.svg";
 import {
   faCreditCard as solidCreditCard,
   faCcDiscover as solidDiscover,
@@ -73,6 +74,14 @@ const PaymentPage = () => {
             Confirmation
           </p>
         </div>
+      </div>
+      <div className="flex justify-center items-center w-full pt-10">
+        <hr className="w-full" />
+        <div className="flex justify-center items-center gap-1 min-w-[200px] max-w-[400px">
+          <img src={lock} alt="lock icon" />
+          <p className="text-xs text-indigo-950">Payment is 100% secured</p>
+        </div>
+        <hr className="w-full" />
       </div>
       <div className="flex flex-col gap-2 bg-stone-100 w-full rounded-md mt-10 p-4">
         <p className="text-lg text-indigo-950 font-semibold">Make payment</p>
@@ -162,7 +171,7 @@ const PaymentPage = () => {
                   CashApp
                 </p>
               </div>
-              <div className="flex flex-col items-center justify-center border rounded-md bg-white w-full px-1 h-16">
+              <div className="flex flex-col items-center justify-center border rounded-md bg-white w-full  px-1 h-16">
                 <FontAwesomeIcon
                   icon={regularCreditCard}
                   className="text-indigo-950"
@@ -290,7 +299,7 @@ const PaymentPage = () => {
         </div>
       </div>
       {/* <div className="flex flex-col w-full bg-stone-100 rounded-lg mt-10 p-4"> */}
-      <div className="grid grid-cols-1 h-auto sm:grid-cols-10 pt-5 pb-10 w-full">
+      <div className="grid grid-cols-1 h-auto sm:grid-cols-10 pt-10 pb-10 w-full">
         <div className="sm:col-span-10 flex flex-col gap-2 bg-stone-100 p-4 rounded-md">
           <p className="text-md text-indigo-950 font-medium">
             Product information
